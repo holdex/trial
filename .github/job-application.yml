@@ -1,0 +1,85 @@
+name: Job Application Form
+description: Apply for a position at Holdex.
+title: "[Position] Firstname Lastname"
+labels: ["job-application"]
+
+body:
+  - type: input
+    id: first_name
+    attributes:
+      label: "First Name"
+      placeholder: "Enter your first name"
+    validations:
+      required: true
+
+  - type: input
+    id: last_name
+    attributes:
+      label: "Last Name"
+      placeholder: "Enter your last name"
+    validations:
+      required: true
+
+  - type: input
+    id: portfolio
+    attributes:
+      label: "Link to Portfolio"
+      placeholder: "https://your-portfolio.com"
+    validations:
+      required: true
+
+  - type: input
+    id: linkedin
+    attributes:
+      label: "Link to LinkedIn Profile"
+      placeholder: "https://linkedin.com/in/yourprofile"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Short Description"
+      description: "Briefly introduce yourself and your experiences. Show us your best achievements and if you're the best fitting candidate for the position."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: position
+    attributes:
+      label: "Application Position"
+      options:
+        - "UX/UI Engineer"
+        - "Full-Stack Engineer"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        🎉 Thank you for your application!
+        
+        ## ✅ What's next?
+
+        <br>
+        
+        - Read & Familiarize Yourself with 🔗 **[Our Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md)**
+        
+        ---
+        
+        ## 🎯 Trial Phase
+        
+        After this step, you will begin your **Trial**, which consists of two tasks:
+        
+        1. **Submit Your Profile Through a PR**  
+           - The PR must follow our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md).  
+           - A PR that doesn’t follow the Guidelines will result in rejection.
+        
+        2. **Complete a Technical Task**  
+           - This will be assigned manually by **Mark Curchin** (@markholdex).
+        
+        ---
+        
+        If you have any questions, feel free to ask in this issue!
