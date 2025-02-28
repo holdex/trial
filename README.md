@@ -11,7 +11,7 @@ After the issue is created, please submit a **Pull Request (PR)** adding your pr
 
 ### Steps:
 1. **Fork this repository**  
-2. **Edit [`profile.json`**](https://github.com/holdex/trial/blob/main/profile-submission.json)
+2. **Edit [`profile.json`](https://github.com/holdex/trial/blob/main/profile-submission.json)**
    - Add your details using this format:  
    ```json
    {
