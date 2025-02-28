@@ -24,23 +24,34 @@ body:
     id: portfolio
     attributes:
       label: "Link to Portfolio"
+      description: "Enter a valid URL. Example: [https://your-portfolio.com](https://your-portfolio.com)"
       placeholder: "https://your-portfolio.com"
     validations:
       required: true
+      pattern: "https?://.*"
 
   - type: input
     id: linkedin
     attributes:
       label: "Link to LinkedIn Profile"
+      description: "Enter a valid LinkedIn profile URL. Example: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)"
       placeholder: "https://linkedin.com/in/yourprofile"
     validations:
       required: true
-
+      pattern: "https?://.*"
+  
+  - type: markdown
+    attributes:
+      value: |
+        
+        ⚠️ **Ensure your portfolio and LinkedIn links include `https://` to be clickable.**
+        
+  
   - type: textarea
     id: description
     attributes:
       label: "Short Description"
-      description: "Briefly introduce yourself and your experiences. Show us your best achievements and if you're the best fitting candidate for the position."
+      description: "Briefly introduce yourself and your experiences. Show us your best achievements and explain how you're the best fitting candidate for the position."
     validations:
       required: true
 
@@ -92,18 +103,17 @@ body:
            - Add your details using this format:  
            
            ```json
-               {
-                 "github_handle": "your_github_username",
-                 "full_name": "Your Name",
-                 "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
-               }
+           {
+             "github_handle": "your_github_username",
+             "full_name": "Your Name",
+             "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
+           }
            ```  
         3. **Commit your changes and create a Pull Request (PR)**  
         4. **Wait for review and approval**  
-        
-        <br>
+
         <hr>
 
-        If you have any questions, feel free to ask in this issue!
+        If you have any questions, feel free to ask in this issue! 😉
 
         <hr>
