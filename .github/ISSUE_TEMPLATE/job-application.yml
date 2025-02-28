@@ -82,4 +82,21 @@ body:
         
         ---
         
+        ## How to Submit Your Profile  
+        
+        After the issue is created, please submit a **Pull Request (PR)** adding your profile to our JSON file.  
+        
+        ### Steps:
+        1. **Fork this repository**  
+        2. **Edit [`profile-submission.json`](https://github.com/holdex/trial/blob/main/profile-submission.json)**  
+           - Add your details using this format:  
+           ```json
+           {
+             "github_handle": "your_github_username",
+             "full_name": "Your Name"
+           }
+           ```  
+        3. **Commit your changes and create a Pull Request (PR)**  
+        4. **Wait for review and approval**  
+        
         If you have any questions, feel free to ask in this issue!
