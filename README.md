@@ -19,3 +19,8 @@ After the issue is created, please submit a **Pull Request (PR)** adding your pr
      "full_name": "Your Name",
      "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
    }
+
+#### ⚠⚠ **IMPORTANT:** ⚠⚠
+- The PR must follow our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md).  
+- A PR that doesn’t follow the Guidelines will result in rejection.
+           
