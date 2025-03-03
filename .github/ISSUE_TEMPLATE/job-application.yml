@@ -60,8 +60,16 @@ body:
     attributes:
       label: "Application Position"
       options:
+        - "UX/UI Designer"
         - "UX/UI Engineer"
         - "Full-Stack Engineer"
+        - "DevOps Engineer"
+        - "GoLang Engineer"
+        - "Data Scientist"
+        - "Python Engineer"
+        - "Developer Relations (DevRel)"
+        - "Senior Smart Contract Developer"
+        - "Actuarial Advisor"
     validations:
       required: true
 
