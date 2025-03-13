@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "Addika1630",
+      "full_name": "Addisu Mulat",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/112"
+    },
+    {
       "github_handle": "lucky-ivanius",
       "full_name": "Lucky Ivanius",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
