@@ -1,11 +1,11 @@
 {
   "team_profiles": [
     {
-<<<<<<< HEAD
       "github_handle": "Addika1630",
       "full_name": "Addisu Mulat",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/112"
-=======
+    },
+    {
       "github_handle": "lucky-ivanius",
       "full_name": "Lucky Ivanius",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
@@ -14,7 +14,6 @@
       "github_handle": "Promo656",
       "full_name": "Egor Postnov",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/121"
->>>>>>> e99981b3c7b2366db0e748b12abec42a7fe7dded
     }
   ]
 }
