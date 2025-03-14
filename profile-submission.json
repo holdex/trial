@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "Addika1630",
+      "full_name": "Addisu Mulat",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/112"
+    },
+    {
       "github_handle": "lucky-ivanius",
       "full_name": "Lucky Ivanius",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
@@ -9,6 +14,16 @@
       "github_handle": "matheus1lva",
       "full_name": "Matheus Silva",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/93"
+    },
+    {
+      "github_handle": "shad-k",
+      "full_name": "Shadab Khan",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/21"
+    },
+    {
+      "github_handle": "Promo656",
+      "full_name": "Egor Postnov",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/121"
     }
   ]
 }
