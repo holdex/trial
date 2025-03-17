@@ -6,8 +6,10 @@
 1. Execute a trial by merging two small PRs:
     - 1st PR: submit your profile to our simple JSON file,
     - 2nd PR: complete a test to prove your skill (will be provided by our team member),
-1. Follow our socials or consider tweeting about us.
-
+1. Follow our socials or consider tweeting about us:
+    - [X](https://x.com/HoldexIo)
+    - [LinkedIn](https://www.linkedin.com/company/holdexlimited)
+   
 # How to Submit Your Profile  
 
 1. Fork this repository
