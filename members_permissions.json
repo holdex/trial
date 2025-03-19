@@ -1,0 +1,62 @@
+{
+  "organizations": {
+    "orgA": {
+      "organization_members": {
+        "alice": { "teams": ["devs", "reviewers"] },
+        "bob": { "teams": ["devs"] },
+        "carol": { "teams": ["admins"] }
+      },
+      "outside_collaborators": {
+        "dave": { "repositories": { "repoA": "read", "repoB": "triage" } },
+        "eve": { "repositories": { "repoC": "write" } }
+      },
+      "teams": {
+        "devs": {
+          "repositories": {
+            "repoA": "write",
+            "repoB": "read"
+          }
+        },
+        "reviewers": {
+          "repositories": {
+            "repoA": "triage"
+          }
+        },
+        "admins": {
+          "repositories": {
+            "repoA": "admin",
+            "repoB": "admin",
+            "repoC": "maintain"
+          }
+        }
+      }
+    },
+    "orgB": {
+      "organization_members": {
+        "frank": { "teams": ["backend", "reviewers"] },
+        "grace": { "teams": ["frontend"] }
+      },
+      "outside_collaborators": {
+        "hank": { "repositories": { "repoX": "read", "repoY": "write" } }
+      },
+      "teams": {
+        "backend": {
+          "repositories": {
+            "repoX": "write",
+            "repoY": "maintain"
+          }
+        },
+        "frontend": {
+          "repositories": {
+            "repoZ": "write"
+          }
+        },
+        "reviewers": {
+          "repositories": {
+            "repoX": "triage"
+          }
+        }
+      }
+    }
+  }
+}
