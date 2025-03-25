@@ -3,7 +3,7 @@
 
 # ✅ What's next?
 1. Familiarize yourself with our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md);
-1. Execute a trial by merging two small PRs:
+1. Execute a trial by merging two PRs:
     - 1st PR: submit your profile to our simple JSON file,
     - 2nd PR: complete a test to prove your skill (will be provided by our team member),
 1. Follow our socials or consider tweeting about us:
