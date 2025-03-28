@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "repos4",
+      "full_name": "Marko Horvat",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/154"
+    },
+    {
       "github_handle": "0xhiros",
       "full_name": "Masahiro Aratani",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/150"
