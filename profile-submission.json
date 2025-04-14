@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "gianpratamadev",
+      "full_name": "Gian Pratama",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/201"
+    },
+    {
       "github_handle": "0xhiros",
       "full_name": "Masahiro Aratani",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/150"
