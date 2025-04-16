@@ -6,8 +6,9 @@
 1. Execute a trial by merging two PRs:
     - 1st PR: submit your profile to our simple JSON file,
     - 2nd PR: complete a test to prove your skill (will be provided by our team member),
-1. Follow our socials or consider tweeting about us:
-    - [X](https://x.com/HoldexIo)
+1. Follow our socials and consider tweeting about us:
+    - [Official Holdex X](https://x.com/HoldexIo)
+    - [Holdex CEO](https://x.com/zolotokrylin)
     - [LinkedIn](https://www.linkedin.com/company/holdexlimited)
    
 # How to Submit Your Profile  
@@ -21,7 +22,7 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
     }
     ```
-3. Create a Pull Request (PR), [attach it to this issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#about-linked-issues-and-pull-requests) and wait for the review.
+3. Create a Pull Request (PR), [attach it to this issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#about-linked-issues-and-pull-requests) and wait for the review. Double check to make sure your PR match perfectly with our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md), otherwise we won't consider your submission.
 
 # Questions? 
 If you have any questions, feel free to ask them directly in this issue 😉
