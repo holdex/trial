@@ -22,7 +22,7 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
     }
     ```
-3. Create a Pull Request (PR), [attach it to this issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#about-linked-issues-and-pull-requests) and wait for the review. Double check to make sure your PR match perfectly with our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md), otherwise we won't consider your submission.
+3. Create a Pull Request (PR), [attach it to this issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#about-linked-issues-and-pull-requests) and wait for the review. Double check to make sure your PR matches perfectly with our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md). Otherwise, we won't consider your submission.
 
 # Questions? 
 If you have any questions, feel free to ask them directly in this issue 😉
