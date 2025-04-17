@@ -21,12 +21,12 @@ body:
       required: true
   
   - type: input
-      id: source
-      attributes:
-        label: "How did you find out about this job?"
-        placeholder: "Google, referral, X, Behance, etc."
-      validations:
-        required: false
+    id: source
+    attributes:
+      label: "How did you find out about this job?"
+      placeholder: "Google, referral, X, Behance, etc."
+    validations:
+      required: false
  
   - type: input
     id: portfolio
