@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "gardito.git",
+      "full_name": "Gardito Lukman",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/383"
+    },
+    {
       "github_handle": "jediDean",
       "full_name": "Jesse Dean",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
@@ -140,6 +145,6 @@
       "github_handle": "pandablue0809",
       "full_name": "Riku Kodama",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/82"
-    }  
+    }
   ]
 }
