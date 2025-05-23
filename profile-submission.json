@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "fortdev210",
+      "full_name": "Jeff Jin",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/427"
+    },
+    {
       "github_handle": "jediDean",
       "full_name": "Jesse Dean",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
