@@ -166,7 +166,6 @@
       "full_name": "Chris Ma",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/421"
     },
- 
     { "github_handle": "Nukelimer",
       "full_name": "Remi Egwuda",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/440"
@@ -175,8 +174,12 @@
       "github_handle": "fils7",
       "full_name": "Filipe Rey Guimaraes dos Santos",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/416"
-
-      
+    },
+    {
+      "github_handle": "sandd23",
+      "full_name": "Sandeep Kumar",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/484"
     }
+    
    ]
 }
