@@ -5,7 +5,7 @@
       "full_name": "Jesse Dean",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
     },
-     {
+    {
       "github_handle": "fbuka",
       "full_name": "Fatawu Bukari",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/302"
@@ -126,7 +126,6 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/241"
     },
     {
-
       "github_handle": "herostatic",
       "full_name": "Legend Macaulay",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/296"
@@ -142,9 +141,9 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/82"
     },
     {
-    "github_handle": "andrewMazhaev",
-    "full_name": "Andrew Mazhaev",
-    "github_trial_issue_link": "https://github.com/holdex/trial/issues/361"
+      "github_handle": "andrewMazhaev",
+      "full_name": "Andrew Mazhaev",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/361"
     },
     {
       "github_handle": "hakimasyrofi",
@@ -166,7 +165,8 @@
       "full_name": "Chris Ma",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/421"
     },
-    { "github_handle": "Nukelimer",
+    {
+      "github_handle": "Nukelimer",
       "full_name": "Remi Egwuda",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/440"
     },
@@ -184,6 +184,11 @@
       "github_handle": "sandd23",
       "full_name": "Sandeep Kumar",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/484"
+    },
+    {
+      "github_handle": "katedihich",
+      "full_name": "Kate Dihich",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/527"
     }
-   ]
+  ]
 }
