@@ -190,6 +190,10 @@
       "full_name": "Parth Patel",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/564"
     },
+      "github_handle": "DMLE-max",
+      "full_name": "Dmitrii Levinschii",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/497"
+    },
     {
       "github_handle": "Manoj-N00",
       "full_name": "Manoj Naik",
@@ -199,7 +203,7 @@
       "github_handle": "katedihich",
       "full_name": "Kate Dihich",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/527"
-
+    }
     }
   ]
 }
