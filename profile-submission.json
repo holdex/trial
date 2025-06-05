@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+  "github_handle": "VenishSureliya",
+  "full_name": "Venish Sureliya",
+  "github_trial_issue_link": "https://github.com/holdex/trial/issues/576"
+    }
+    {
       "github_handle": "jediDean",
       "full_name": "Jesse Dean",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
