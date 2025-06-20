@@ -1,10 +1,10 @@
 {
   "team_profiles": [
-    {
-      "github_handle": "jediDean",
-      "full_name": "Jesse Dean",
-      "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
-    },
+        {
+            "github_handle": "jediDean",
+            "full_name": "Jesse Dean",
+            "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
+        },
     {
       "github_handle": "fbuka",
       "full_name": "Fatawu Bukari",
@@ -234,6 +234,11 @@
       "github_handle": "Harry-027",
       "full_name": "Harish Bhawnani",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/624"
+    },
+    {
+      "github_handle": "cmdillon",
+      "full_name": "Curtis Matthiesen-Dillon",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/648"
     }
   ]    
 }
