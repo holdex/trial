@@ -1,4 +1,5 @@
-  "team_profiles": [
+{
+"team_profiles": [
     {
     "github_handle": "gttkaca2",
     "full_name": "Gatot Priambodo",
@@ -270,3 +271,4 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/654"
     }
   ]
+}
