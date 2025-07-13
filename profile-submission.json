@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "Vishwajith-Shettigar",
+      "full_name": "Vishwajith Shettigar",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/822"
+    },
+    {
       "github_handle": "JackLiYH",
       "full_name": "Jack Li",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/705"
