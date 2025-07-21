@@ -1,14 +1,14 @@
 {
-"team_profiles": [
+  "team_profiles": [
     {
-    "github_handle": "gttkaca2",
-    "full_name": "Gatot Priambodo",
-    "github_trial_issue_link": "https://github.com/holdex/trial/issues/763"
+      "github_handle": "gttkaca2",
+      "full_name": "Gatot Priambodo",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/763"
     },
     {
       "github_handle": "shubhiscoding",
       "full_name": "Shubh Kesharwani",
-      "github_trial_issue_link":"https://github.com/holdex/trial/issues/734"
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/734"
     },
     {
       "github_handle": "JackLiYH",
@@ -309,6 +309,11 @@
       "github_handle": "muhammadchandra19",
       "full_name": "Muhammad Chandra Zulfikar",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/790"
+    },
+    {
+      "github_handle": "quagmt",
+      "full_name": "Mai Thien Quang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/844"
     }
   ]
 }
