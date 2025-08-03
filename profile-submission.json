@@ -1,14 +1,19 @@
 {
-"team_profiles": [
+  "team_profiles": [
     {
-    "github_handle": "gttkaca2",
-    "full_name": "Gatot Priambodo",
-    "github_trial_issue_link": "https://github.com/holdex/trial/issues/763"
+      "github_handle": "15077693d",
+      "full_name": "Yiu Lap Sang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/788"
+    },
+    {
+      "github_handle": "gttkaca2",
+      "full_name": "Gatot Priambodo",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/763"
     },
     {
       "github_handle": "shubhiscoding",
       "full_name": "Shubh Kesharwani",
-      "github_trial_issue_link":"https://github.com/holdex/trial/issues/734"
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/734"
     },
     {
       "github_handle": "Vishwajith-Shettigar",
@@ -271,6 +276,12 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/645"
     },
     {
+
+      "github_handle": "cynthiacc512",
+      "full_name": "Cynthia Caroline",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/171"
+    },
+    {
       "github_handle": "mawalidin",
       "full_name": "Muhammad Walidin",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/176"
@@ -314,6 +325,16 @@
       "github_handle": "muhammadchandra19",
       "full_name": "Muhammad Chandra Zulfikar",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/790"
+    },
+    {
+      "github_handle": "beabys",
+      "full_name": "Alfonso Rodriguez Gallegos",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/752"
+    },
+    {
+      "github_handle": "letItCurl",
+      "full_name": "Roland Lopez",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/857"
     }
 <<<<<<< HEAD
   ]    
