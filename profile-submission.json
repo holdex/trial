@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "jasoleo",
+      "full_name": "Jason Tse",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/884"
+    },
+    {
       "github_handle": "15077693d",
       "full_name": "Yiu Lap Sang",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/788"
