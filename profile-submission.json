@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "DeaVenditama",
+      "full_name": "Dea Venditama",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/985"
+    },
+    {
       "github_handle": "15077693d",
       "full_name": "Yiu Lap Sang",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/788"
@@ -271,7 +276,6 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/645"
     },
     {
-
       "github_handle": "cynthiacc512",
       "full_name": "Cynthia Caroline",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/171"
@@ -330,6 +334,16 @@
       "github_handle": "letItCurl",
       "full_name": "Roland Lopez",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/857"
+    },
+    {
+      "github_handle": "oyi77",
+      "full_name": "Muchammad Fikri Izzuddin",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/928"
+    },
+    {
+      "github_handle": "hsib19",
+      "full_name": "Hasib Muharam",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/930"
     },
     {
       "github_handle": "Risyandi",
