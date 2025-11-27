@@ -1,6 +1,51 @@
 {
   "team_profiles": [
     {
+      "github_handle": "DeaVenditama",
+      "full_name": "Dea Venditama",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/985"
+    },
+    {
+      "github_handle": "15077693d",
+      "full_name": "Yiu Lap Sang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/788"
+    },
+    {
+      "github_handle": "gttkaca2",
+      "full_name": "Gatot Priambodo",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/763"
+    },
+    {
+      "github_handle": "shubhiscoding",
+      "full_name": "Shubh Kesharwani",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/734"
+    },
+    {
+      "github_handle": "JackLiYH",
+      "full_name": "Jack Li",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/705"
+    },
+    {
+      "github_handle": "mo-hak",
+      "full_name": "Mohak Gupta",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/696"
+    },
+    {
+      "github_handle": "jediDean",
+      "full_name": "Jesse Dean",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/364"
+    },
+    {
+      "github_handle": "fbuka",
+      "full_name": "Fatawu Bukari",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/302"
+    },
+    {
+      "github_handle": "sajidwazir90",
+      "full_name": "Sajid Khan",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/320"
+    },
+    {
       "github_handle": "0xhiros",
       "full_name": "Masahiro Aratani",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/150"
@@ -89,6 +134,246 @@
       "github_handle": "0xcoreblock",
       "full_name": "Jeremy Godfrey",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/147"
+    },
+    {
+      "github_handle": "kayabdul01",
+      "full_name": "Kamal Abdul",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/164"
+    },
+    {
+      "github_handle": "bayualpiansyah-design",
+      "full_name": "Bayu Alpiansyah",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/238"
+    },
+    {
+      "github_handle": "josedevian",
+      "full_name": "Jose Devian Hibono",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/185"
+    },
+    {
+      "github_handle": "fernandoasikin",
+      "full_name": "Fernando Asikin",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/241"
+    },
+    {
+      "github_handle": "herostatic",
+      "full_name": "Legend Macaulay",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/296"
+    },
+    {
+      "github_handle": "aybanda",
+      "full_name": "Ajay Bandaru",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/306"
+    },
+    {
+      "github_handle": "pandablue0809",
+      "full_name": "Riku Kodama",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/82"
+    },
+    {
+      "github_handle": "andrewMazhaev",
+      "full_name": "Andrew Mazhaev",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/361"
+    },
+    {
+      "github_handle": "hakimasyrofi",
+      "full_name": "Muhammad Asyrofi Al Hakim",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/389"
+    },
+    {
+       "github_handle": "jingyi2811",
+       "full_name": "Lee Jing-yi",
+       "github_trial_issue_link": "https://github.com/holdex/trial/issues/380"
+    },
+    {
+      "github_handle": "iiihsy",
+      "full_name": "Sudarat Yongkiatkarn",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/412"
+    },
+    {
+      "github_handle": "light-fury",
+      "full_name": "Gary Lee",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/424"
+    },
+    {
+      "github_handle": "endlessor",
+      "full_name": "Chris Ma",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/421"
+    },
+    {
+      "github_handle": "Nukelimer",
+      "full_name": "Remi Egwuda",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/440"
+    },
+    {
+      "github_handle": "fils7",
+      "full_name": "Filipe Rey Guimaraes dos Santos",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/416"
+    },
+    {
+      "github_handle": "koko37",
+      "full_name": "Edmon Agapito",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/442"
+    },
+    {
+      "github_handle": "sandd23",
+      "full_name": "Sandeep Kumar",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/484"
+    },
+    {
+      "github_handle": "dijitalnomad",
+      "full_name": "Joshua Ejonavi",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/531"
+    },
+    {
+      "github_handle": "DMLE-max",
+      "full_name": "Dmitrii Levinschii",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/497"
+    },
+    {
+      "github_handle": "Manoj-N00",
+      "full_name": "Manoj Naik",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/446"
+    },
+    {
+      "github_handle": "katedihich",
+      "full_name": "Kate Dihich",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/527"
+    },
+    {
+      "github_handle": "parth-15",
+      "full_name": "Parth Patel",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/564"
+    },
+    {
+      "github_handle": "IonasPakalnishkis1",
+      "full_name": "Ionas Pakalnishkis",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/575"
+    },
+    {
+      "github_handle": "martins87",
+      "full_name": "Daniel Martins",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/591"
+    },
+    {
+      "github_handle": "neebneeba",
+      "full_name": "Nerguibaatar Bat-Erdene",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/581"
+    },
+    {
+      "github_handle": "shashank-100",
+      "full_name": "Shashank Telkhade",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/621"
+    },
+    {
+      "github_handle": "mirvald-space",
+      "full_name": "Vadym Mirvald",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/613"
+    },
+    {
+      "github_handle": "Harry-027",
+      "full_name": "Harish Bhawnani",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/624"
+    },
+    {
+      "github_handle": "roars2121",
+      "full_name": "Ruairidh Orr Ewing",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/645"
+    },
+    {
+      "github_handle": "cynthiacc512",
+      "full_name": "Cynthia Caroline",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/171"
+    },
+    {
+      "github_handle": "mawalidin",
+      "full_name": "Muhammad Walidin",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/176"
+    },
+    {
+      "github_handle": "hatfim",
+      "full_name": "Windy Miftah",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/687"
+    },
+    {
+      "github_handle": "siddharth-09",
+      "full_name": "Siddharth Panchal",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/708"
+    },
+    {
+      "github_handle": "rainwolf",
+      "full_name": "Walied Othman",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/654"
+    },
+    {
+      "github_handle": "Goeter",
+      "full_name": "Jason Vianney",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/795"
+    },
+    {
+      "github_handle": "NixonNova",
+      "full_name": "Nixon Nova",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/742"
+    },
+    {
+      "github_handle": "muzhangse",
+      "full_name": "Frank Zhang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/731"
+    },
+    {
+      "github_handle": "ukane-philemon",
+      "full_name": "Philemon Ukane",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/598"
+    },
+    {
+      "github_handle": "muhammadchandra19",
+      "full_name": "Muhammad Chandra Zulfikar",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/790"
+    },
+    {
+      "github_handle": "beabys",
+      "full_name": "Alfonso Rodriguez Gallegos",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/752"
+    },
+    {
+      "github_handle": "letItCurl",
+      "full_name": "Roland Lopez",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/857"
+    },
+    {
+      "github_handle": "hasan8287",
+      "full_name": "Fuad Hasan",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/949"
+    },
+    {
+      "github_handle": "dante4rt",
+      "full_name": "Muhammad Ramadhani",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/916"
+    },
+    {
+      "github_handle": "oyi77",
+      "full_name": "Muchammad Fikri Izzuddin",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/928"
+    },
+    {
+      "github_handle": "hsib19",
+      "full_name": "Hasib Muharam",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/930"
+    },
+    {
+      "github_handle": "Risyandi",
+      "full_name": "Ris yandi",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/936"
+    },
+    {
+      "github_handle": "anataliocs",
+      "full_name": "Chris Anatalio",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1012"
+    },
+    {
+      "github_handle": "calpa",
+      "full_name": "Calpa Liu",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1032"
     }
     {
       "github_handle": "Mutiu001", " 
@@ -98,4 +383,3 @@
     },
   ]
 }
-
