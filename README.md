@@ -1,3 +1,3 @@
-# Interested? in Joining Us?
+# Welcome to Apply! 
 
-Start by creating an issue using the **[Job Application Form](https://github.com/holdex/trial/issues/new?template=job-application.yml)** template then follow the next Steps.
+Find a job that suits you best at https://holdex.io/c/jobs and follow the instructions.
