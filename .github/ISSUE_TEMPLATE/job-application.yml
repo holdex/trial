@@ -4,6 +4,27 @@ title: "[Position] Firstname Lastname"
 labels: ["job-application"]
 
 body:
+  - type: dropdown
+    id: position
+    attributes:
+      label: "Application Position"
+      options:
+        - "Partner (Entrepreneur in Residence)"
+        - "UX/UI Designer"
+        - "UX/UI Engineer"
+        - "Full-Stack Engineer"
+        - "DevOps Engineer"
+        - "GoLang Engineer"
+        - "Data Scientist"
+        - "Python Engineer"
+        - "Developer Relations (DevRel)"
+        - "Senior Smart Contract Developer"
+        - "Executive Assistent"
+        - "Actuarial Advisor"
+        - "Other"
+    validations:
+      required: true
+
   - type: input
     id: first_name
     attributes:
@@ -20,6 +41,22 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: telegram
+    attributes:
+      label: "Telegram"
+      placeholder: "Enter your Telegram Username"
+    validations:
+      required: true
+  
+  - type: input
+    id: source
+    attributes:
+      label: "How did you find out about this job?"
+      placeholder: "Google, referral, X, Behance, etc."
+    validations:
+      required: false
+ 
   - type: input
     id: portfolio
     attributes:
@@ -54,66 +91,3 @@ body:
       description: "Briefly introduce yourself and your experiences. Show us your best achievements and explain how you're the best fitting candidate for the position."
     validations:
       required: true
-
-  - type: dropdown
-    id: position
-    attributes:
-      label: "Application Position"
-      options:
-        - "UX/UI Engineer"
-        - "Full-Stack Engineer"
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        
-        🎉 Thank you for your application!
-        
-        ## ✅ What's next?
-
-        <br>
-        
-        - Read & Familiarize Yourself with 🔗 **[Our Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md)**
-        
-        ---
-        
-        ## 🎯 Trial Phase
-        
-        After this step, you will begin your **Trial**, which consists of two tasks:
-        
-        1. **Submit Your Profile Through a PR**  
-           - The PR must follow our [Guidelines](https://github.com/holdex/developers/blob/main/.github/CONTRIBUTING.md).  
-           - A PR that doesn’t follow the Guidelines will result in rejection.
-        
-        2. **Complete a Technical Task**  
-           - This will be assigned manually by **Mark Curchin** (@markholdex).
-        
-        ---
-        
-        ## How to Submit Your Profile  
-        
-        After the issue is created, please submit a **Pull Request (PR)** adding your profile to our JSON file.  
-        
-        ### Steps:
-        1. **Fork this repository**  
-        2. **Edit [`profile-submission.json`](https://github.com/holdex/trial/blob/main/profile-submission.json)**  
-           - Add your details using this format:  
-           
-           ```json
-           {
-             "github_handle": "your_github_username",
-             "full_name": "Your Name",
-             "github_trial_issue_link": "https://github.com/holdex/trial/issues/your_issue_number"
-           }
-           ```  
-        3. **Commit your changes and create a Pull Request (PR)**  
-        4. **Wait for review and approval**  
-
-        <hr>
-
-        If you have any questions, feel free to ask in this issue! 😉
-
-        <hr>
