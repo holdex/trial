@@ -6,9 +6,10 @@
 1. Execute a trial by merging two PRs:
     - 1st PR: submit your profile to our simple JSON file,
     - 2nd PR: complete a test to prove your skill (will be provided by our team member),
-1. Follow our socials or consider tweeting about us:
-    - [X](https://x.com/HoldexIo)
-    - [LinkedIn](https://www.linkedin.com/company/holdexlimited)
+1. Follow our socials and consider tweeting about us:
+    - [Official Holdex X](https://x.com/HoldexIo)
+    - [Holdex CEO](https://x.com/zolotokrylin)
+    - [LinkedIn](https://www.linkedin.com/company/holdex)
    
 # How to Submit Your Profile  
 
