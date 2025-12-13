@@ -9,7 +9,7 @@
 1. Follow our socials and consider tweeting about us:
     - [Official Holdex X](https://x.com/HoldexIo)
     - [Holdex CEO](https://x.com/zolotokrylin)
-    - [LinkedIn](https://www.linkedin.com/company/holdexlimited)
+    - [LinkedIn](https://www.linkedin.com/company/holdex)
    
 # How to Submit Your Profile  
 
