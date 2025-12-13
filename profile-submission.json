@@ -1,5 +1,15 @@
 {
   "team_profiles": [
+     {
+      "github_handle": "lucky-ivanius",
+      "full_name": "Lucky Ivanius",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
+    },
+    {
+      "github_handle": "0xNaxzerrr",
+      "full_name": "Soucksengphet Lattana",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/87"
+    },
     {
       "github_handle": "girma336",
       "full_name": "Girma Tarekegn",
