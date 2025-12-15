@@ -1,6 +1,6 @@
 {
   "team_profiles": [
-     {
+    {
       "github_handle": "lucky-ivanius",
       "full_name": "Lucky Ivanius",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
@@ -15,6 +15,7 @@
       "full_name": "Jay Herbert",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/156"
     },
+    {
       "github_handle": "girma336",
       "full_name": "Girma Tarekegn",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/160"
@@ -85,10 +86,15 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/427"
     },
     {
-  "github_handle": "premgurusamy",
-  "full_name": "Prem Anandh",
-  "github_trial_issue_link": "https://github.com/holdex/trial/issues/457"
-},
+      "github_handle": "premgurusamy",
+      "full_name": "Prem Anandh",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/457"
+    },
+    {
+      "github_handle": "soundarya788",
+      "full_name": "Soundarya Priyadharshini",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/608"
+    },
     {
       "github_handle": "jediDean",
       "full_name": "Jesse Dean",
@@ -314,17 +320,16 @@
       "full_name": "Remi Egwuda",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/440"
     },
-    
     {
       "github_handle": "fils7",
       "full_name": "Filipe Rey Guimaraes dos Santos",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/416"
     },
-	{
+	  {
      "github_handle": "mikaelowenn",
       "full_name": "Mikael Owen",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/397"
-	},
+	  },
     {
        "github_handle": "MuhammadZarq13",
       "full_name": "Muhammad Zarq Khan",
@@ -634,13 +639,13 @@
       "github_handle": "nastashaardlay-ai",
       "full_name": "Nastasha Primera",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/1039"
-	},
-	{
-		"github_handle": "Nikhil8400",
+    },
+ 	  {
+   		"github_handle": "Nikhil8400",
       "full_name": "Nikhil Pandey",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/439"
-  },
-  {
+    },
+    {
     "github_handle": "Nightowl1905",
     "full_name": "Dom Lai",
     "github_trial_issue_link": "https://github.com/holdex/trial/issues/1038"
