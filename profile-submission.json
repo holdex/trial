@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "liverpool-leonawong",
+      "full_name": "Leona Wong",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/876"
+    },
+    {
       "github_handle": "lucky-ivanius",
       "full_name": "Lucky Ivanius",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/56"
