@@ -4,6 +4,28 @@ title: "[Position] Firstname Lastname"
 labels: ["job-application"]
 
 body:
+  - type: dropdown
+    id: position
+    attributes:
+      label: "Application Position"
+      options:
+        - "Partner (Entrepreneur in Residence)"
+        - "Marketing Maestro (Head of Marketing)"
+        - "UX/UI Designer"
+        - "UX/UI Engineer"
+        - "Full-Stack Engineer"
+        - "DevOps Engineer"
+        - "GoLang Engineer"
+        - "Data Scientist"
+        - "Python Engineer"
+        - "Developer Relations (DevRel)"
+        - "Senior Smart Contract Developer"
+        - "Executive Assistent"
+        - "Actuarial Advisor"
+        - "Other"
+    validations:
+      required: true
+
   - type: input
     id: first_name
     attributes:
@@ -68,23 +90,5 @@ body:
     attributes:
       label: "Short Description"
       description: "Briefly introduce yourself and your experiences. Show us your best achievements and explain how you're the best fitting candidate for the position."
-    validations:
-      required: true
-
-  - type: dropdown
-    id: position
-    attributes:
-      label: "Application Position"
-      options:
-        - "UX/UI Designer"
-        - "UX/UI Engineer"
-        - "Full-Stack Engineer"
-        - "DevOps Engineer"
-        - "GoLang Engineer"
-        - "Data Scientist"
-        - "Python Engineer"
-        - "Developer Relations (DevRel)"
-        - "Senior Smart Contract Developer"
-        - "Actuarial Advisor"
     validations:
       required: true
