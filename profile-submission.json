@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "VasishtGR",
+      "full_name": "Vasisht G R",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/602"
+    },
+    {
       "github_handle": "christinansy22",
       "full_name": "Ng Sum Yi",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/703"
@@ -59,6 +64,11 @@
       "github_handle": "flik930",
       "full_name": "Steve Lam",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/891"
+    },
+    {
+      "github_handle": "soloking1412",
+      "full_name": "Maheswaran Velmurugan",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/28"
     },
     {
       "github_handle": "DeaVenditama",
@@ -311,6 +321,11 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/389"
     },
     {
+      "github_handle": "Letsplaywithaman",
+      "full_name": "Aman Sindal",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/409"
+    },
+    {
       "github_handle": "techietop",
       "full_name": "Nguyen Trieu",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/399"
@@ -379,6 +394,11 @@
       "github_handle": "sandd23",
       "full_name": "Sandeep Kumar",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/484"
+    },
+    {
+      "github_handle": "castles2",
+      "full_name": "Chris Astles",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/518"
     },
     {
       "github_handle": "mo16000",
@@ -820,15 +840,20 @@
       "full_name": "Nikhil Pandey",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/439"
     },
+  	{
+	  	"github_handle": "zzzLydia",
+      "full_name": "Zezheng Zhang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1044"
+    },
     {
-    "github_handle": "Nightowl1905",
-    "full_name": "Dom Lai",
-    "github_trial_issue_link": "https://github.com/holdex/trial/issues/1038"
-	},
-	{
+      "github_handle": "Nightowl1905",
+      "full_name": "Dom Lai",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1038"
+	  },
+	  {
       "github_handle": "arishtj",
       "full_name": "Arisht Jain",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/675"
-  }
- ]
+    }
+  ]
 }

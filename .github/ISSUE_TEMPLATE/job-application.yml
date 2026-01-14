@@ -10,6 +10,7 @@ body:
       label: "Application Position"
       options:
         - "Partner (Entrepreneur in Residence)"
+        - "Marketing Maestro (Head of Marketing)"
         - "UX/UI Designer"
         - "UX/UI Engineer"
         - "Full-Stack Engineer"
