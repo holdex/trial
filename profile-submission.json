@@ -1,6 +1,16 @@
 {
   "team_profiles": [
     {
+      "github_handle": "coladonz",
+      "full_name": "Alfred Manole",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/802"
+    },
+    {
+      "github_handle": "samiksha-kushwah",
+      "full_name": "Samiksha Kushwah",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/714"
+    }, 
+    {
       "github_handle": "VasishtGR",
       "full_name": "Vasisht G R",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/602"
@@ -446,6 +456,11 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/527"
     },
     {
+      "github_handle": "fantasticoder850",
+      "full_name": "Kizashi Nonaka",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/568"
+    },
+    {
       "github_handle": "parth-15",
       "full_name": "Parth Patel",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/564"
@@ -529,6 +544,11 @@
       "github_handle": "roars2121",
       "full_name": "Ruairidh Orr Ewing",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/645"
+    },
+    {
+      "github_handle": "Matatabe95",
+      "full_name": "Edvyn Tanu",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/211"
     },
     {
       "github_handle": "cynthiacc512",
@@ -840,15 +860,20 @@
       "full_name": "Nikhil Pandey",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/439"
     },
+  	{
+	  	"github_handle": "zzzLydia",
+      "full_name": "Zezheng Zhang",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1044"
+    },
     {
-    "github_handle": "Nightowl1905",
-    "full_name": "Dom Lai",
-    "github_trial_issue_link": "https://github.com/holdex/trial/issues/1038"
-	},
-	{
+      "github_handle": "Nightowl1905",
+      "full_name": "Dom Lai",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1038"
+	  },
+	  {
       "github_handle": "arishtj",
       "full_name": "Arisht Jain",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/675"
-  }
- ]
+    }
+  ]
 }
