@@ -1,6 +1,11 @@
 {
   "team_profiles": [
     {
+      "github_handle": "JiayiZuo",
+      "full_name": "Zuo Yi",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/685"
+    },
+    {
       "github_handle": "coladonz",
       "full_name": "Alfred Manole",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/802"
