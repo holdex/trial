@@ -16,7 +16,7 @@
 # How to Submit Your Profile  
 
 1. Fork this repository
-1. Add your profile in the [`profile-submission.json`](/profile-submission.json) file: 
+1. Add your profile in the [`profile-submission.json`](/profile-submission.json) file
 1. Create a Pull Request (PR), [attach it to this issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#about-linked-issues-and-pull-requests) and wait for the review.
 
 # Questions? 
