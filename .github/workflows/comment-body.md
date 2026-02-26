@@ -1,6 +1,6 @@
 # 🎉 Thank you for your application!   
 
-![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzM3aHRxaWg1NWR5ZXV5b3JxcnlrbjZ2c215aGdiejB1YzF5dG93ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xIsloV7zOmt81G/giphy.gif)
+![Celebration gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzM3aHRxaWg1NWR5ZXV5b3JxcnlrbjZ2c215aGdiejB1YzF5dG93ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xIsloV7zOmt81G/giphy.gif)
 
 # ✅ What's next?
 
