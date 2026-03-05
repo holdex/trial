@@ -46,6 +46,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const owner = context.repo.owner.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const repo = context.repo.repo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const prBody = context.payload.pull_request.body || '';
             const regex = new RegExp(
               `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
