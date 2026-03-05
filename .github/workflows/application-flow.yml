@@ -47,11 +47,14 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const prBody = context.payload.pull_request.body || '';
-            const regex = /(?:resolves|closes):?\s*(?:#|https:\/\/github\.com\/[^\/]+\/[^\/]+\/issues\/)(\d+)/gi;;
+            const regex = new RegExp(
+              `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
+              'gi'
+            );
             const matches = [...prBody.matchAll(regex)];
 
             // Extract the numbers and remove duplicates
-            const issueNumbers = [...new Set(matches.map(m => parseInt(m[1], 10)))];
+            const issueNumbers = [...new Set(matches.map(m => parseInt(m[1] || m[2], 10)))];
 
             for (const issue_number of issueNumbers) {
               try {
@@ -62,6 +65,13 @@ jobs:
                   issue_number: issue_number,
                   state: 'open'
                 });
+
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue_number,
+                  body: `Hi @${context.payload.pull_request.user.login} — your profile PR was merged. Please proceed with the trial task.`
+                 });
               } catch (error) {
                 console.log(`Could not reopen issue #${issue_number}: ${error.message}`);
               }
