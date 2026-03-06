@@ -25,7 +25,8 @@ jobs:
             const candidate = issue.user.login;
             const workspace = process.env.GITHUB_WORKSPACE;
             const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/application-follow-up-body.md'), 'utf8')
-              .replace('${candidate}', candidate);
+              .replace('${candidate}', candidate)
+              .replace('${issue_number}', issue.number);
             await github.rest.issues.createComment({ 
               owner: context.repo.owner,
               repo: context.repo.repo,
