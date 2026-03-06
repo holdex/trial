@@ -19,9 +19,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const fs = require('fs');
+            const path = require('path');
             const issue = context.payload.issue;
             const candidate = issue.user.login;
-            const commentBody = `Hi @${candidate} — thanks for applying! Please add your profile by opening a pull request that adds a JSON file with your profile under profile-submission.json. In your PR description include "resolves: #${issue.number}" or "closes: #${issue.number}" so we can link it to this application. Once your PR is merged we'll reopen this issue and ask you to proceed with the trial task.`;
+            const workspace = process.env.GITHUB_WORKSPACE;
+            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/application-follow-up-body.md'), 'utf8')
+              .replace('${candidate}', candidate);
+            const issue = context.payload.issue;
+            const candidate = issue.user.login;
             await github.rest.issues.createComment({ 
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -46,6 +52,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            const fs = require('fs');
+            const path = require('path');
             const owner = context.repo.owner.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const repo = context.repo.repo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             const prBody = context.payload.pull_request.body || '';
@@ -57,6 +65,12 @@ jobs:
 
             // Extract the numbers and remove duplicates
             const issueNumbers = [...new Set(matches.map(m => parseInt(m[1] || m[2], 10)))];
+
+            // use md file
+            const workspace = process.env.GITHUB_WORKSPACE;
+            const user = context.payload.pull_request.user.login
+            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/application-merged-body.md'), 'utf8')
+              .replace('${user}', user);
 
             for (const issue_number of issueNumbers) {
               try {
@@ -72,7 +86,7 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue_number,
-                  body: `Hi @${context.payload.pull_request.user.login} — your profile PR was merged. Please proceed with the trial task.`
+                  body: commentBody
                  });
               } catch (error) {
                 console.log(`Could not reopen issue #${issue_number}: ${error.message}`);
