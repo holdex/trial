@@ -60,7 +60,13 @@ jobs:
               `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
               'mi'
             );
-            const matches = [...prBody.matchAll(regex)];
+            const matches = [];
+            let match;
+
+            while ((match = regex.exec(prBody)) !== null) {
+              matches.push(match);
+              regex.lastIndex = 0; // reset index so it does not continue from previous position
+            }
 
             // Extract the numbers and remove duplicates
             const issueNumbers = [...new Set(matches.map(m => parseInt(m[1] || m[2], 10)))];
