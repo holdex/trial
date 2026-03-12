@@ -58,7 +58,7 @@ jobs:
             const prBody = context.payload.pull_request.body || '';
             const regex = new RegExp(
               `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
-              'gi'
+              'mi'
             );
             const matches = [...prBody.matchAll(regex)];
 
