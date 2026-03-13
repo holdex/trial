@@ -18,11 +18,11 @@ jobs:
           script: |
             const fs = require('fs').promises;
             const path = require('path');
-            const workspace = process.env.GITHUB_WORKSPACE; // Add this line
+            const workspace = process.env.GITHUB_WORKSPACE;
 
             async function run() {
               try {
-                const commentBody = await fs.readFile(path.join(workspace, '.github/workflows/comment-body.md'), 'utf8'); // Update this line
+                const commentBody = await fs.readFile(path.join(workspace, '.github/workflows/comment-body.md'), 'utf8');
                 await github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,

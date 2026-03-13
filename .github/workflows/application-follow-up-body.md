@@ -1,0 +1,1 @@
+Hi @${candidate} — thanks for applying! Please add your profile by opening a pull request that adds a JSON file with your profile under profile-submission.json. In your PR description include "resolves: #${issue_number}" or "closes: #${issue_number}" so we can link it to this application. Once your PR is merged we'll reopen this issue and ask you to proceed with the trial task.
