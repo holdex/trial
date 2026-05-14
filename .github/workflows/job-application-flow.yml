@@ -62,7 +62,12 @@ jobs:
                 try {
                   await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [positionLabel] });
                 } catch (e) {
-                  console.log('Could not add position label:', e.message);
+                  if (e.status === 422) {
+                    await github.rest.issues.createLabel({ ...context.repo, name: positionLabel, color: '0075ca' });
+                    await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [positionLabel] });
+                  } else {
+                    console.log('Could not add position label:', e.message);
+                  }
                 }
               }
             }
