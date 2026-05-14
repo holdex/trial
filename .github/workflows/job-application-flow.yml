@@ -8,7 +8,7 @@ on:
 
 jobs:
   ask-for-pr:
-    if: github.event_name == 'issues'
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'job-application')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -70,6 +70,18 @@ jobs:
                   }
                 }
               }
+            }
+            const firstNameMatch = body.match(/###\s*First Name\s*\n+([^\n]+)/);
+            const lastNameMatch = body.match(/###\s*Last Name\s*\n+([^\n]+)/);
+            const position = positionMatch ? positionMatch[1].trim() : null;
+            const firstName = firstNameMatch ? firstNameMatch[1].trim() : null;
+            const lastName = lastNameMatch ? lastNameMatch[1].trim() : null;
+            if (position && firstName && lastName) {
+              await github.rest.issues.update({
+                ...context.repo,
+                issue_number: issue.number,
+                title: `HR: ${position}: ${firstName} ${lastName}`
+              });
             }
 
   reopen-issue:
