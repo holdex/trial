@@ -6,6 +6,7 @@ on:
 
 jobs:
   add_comment:
+    if: contains(github.event.issue.labels.*.name, 'job-application')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
