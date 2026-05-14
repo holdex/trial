@@ -16,7 +16,7 @@ const positionLabelMap = {
   'Python Engineer': 'position/python-engineer',
   'Developer Relations (DevRel)': 'position/devrel',
   'Senior Smart Contract Developer': 'position/smart-contract-developer',
-  'Executive Assistent': 'position/executive-assistant',
+  'Executive Assistant': 'position/executive-assistant',
   'Actuarial Advisor': 'position/actuarial-advisor',
   'Other': 'position/other',
 };
