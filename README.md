@@ -4,6 +4,7 @@ Build the future of digital assets, AI, and complex software — with a team tha
 
 ## Open Positions
 
+<!-- positions-start -->
 | Role | Applicants |  |
 | ---- | ---------- | --- |
 | UX/UI Designer | 220 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -19,6 +20,7 @@ Build the future of digital assets, AI, and complex software — with a team tha
 | DevOps Engineer | 8 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Partner (Entrepreneur in Residence) | 5 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Executive Assistant | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+<!-- positions-end -->
 
 ## How to Apply
 
