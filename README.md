@@ -5,21 +5,6 @@ Build the future of digital assets, AI, and complex software — with a team tha
 ## Open Positions
 
 <!-- positions-start -->
-| Role | Applicants |  |
-| ---- | ---------- | --- |
-| UX/UI Designer | 220 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Full-Stack Engineer | 119 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Senior Smart Contract Developer | 35 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Python Engineer | 22 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Data Scientist | 20 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Marketing Maestro | 16 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Actuarial Advisor | 13 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| GoLang Engineer | 11 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| UX/UI Engineer | 10 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Developer Relations | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| DevOps Engineer | 8 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Partner (Entrepreneur in Residence) | 5 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Executive Assistant | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 <!-- positions-end -->
 
 ## How to Apply
