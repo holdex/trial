@@ -1,6 +1,6 @@
 name: Job Application Form
 description: Apply for a position at Holdex.
-title: "[Position] Firstname Lastname"
+title: "HR: [Position] Firstname Lastname"
 labels: ["job-application"]
 
 body:
