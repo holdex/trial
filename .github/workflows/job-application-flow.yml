@@ -27,7 +27,7 @@ jobs:
             const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-follow-up-body.md'), 'utf8')
               .replace('${candidate}', candidate)
               .replaceAll('${issue_number}', issue.number);
-            await github.rest.issues.createComment({ 
+            await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
@@ -50,7 +50,7 @@ jobs:
               'Python Engineer': 'position/python-engineer',
               'Developer Relations (DevRel)': 'position/devrel',
               'Senior Smart Contract Developer': 'position/smart-contract-developer',
-              'Executive Assistent': 'position/executive-assistant',
+              'Executive Assistant': 'position/executive-assistant',
               'Actuarial Advisor': 'position/actuarial-advisor',
               'Other': 'position/other',
             };

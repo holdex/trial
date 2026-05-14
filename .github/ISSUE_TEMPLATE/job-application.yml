@@ -20,7 +20,7 @@ body:
         - "Python Engineer"
         - "Developer Relations (DevRel)"
         - "Senior Smart Contract Developer"
-        - "Executive Assistent"
+        - "Executive Assistant"
         - "Actuarial Advisor"
         - "Other"
     validations:
@@ -49,7 +49,7 @@ body:
       placeholder: "Enter your Telegram Username"
     validations:
       required: true
-  
+
   - type: input
     id: source
     attributes:
@@ -57,7 +57,7 @@ body:
       placeholder: "Google, referral, X, Behance, etc."
     validations:
       required: false
- 
+
   - type: input
     id: portfolio
     attributes:
@@ -77,14 +77,13 @@ body:
     validations:
       required: true
       pattern: "https?://.*"
-  
+
   - type: markdown
     attributes:
       value: |
-        
+
         ⚠️ **Ensure your portfolio and LinkedIn links include `https://` to be clickable.**
-        
-  
+
   - type: textarea
     id: description
     attributes:
