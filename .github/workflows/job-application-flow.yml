@@ -8,7 +8,7 @@ on:
 
 jobs:
   ask-for-pr:
-    if: github.event_name == 'issues'
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'job-application')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
