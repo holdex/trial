@@ -1,4 +1,8 @@
-_Goal: https://github.com/holdex/trial/issues/1170_
+---
+goal: https://github.com/holdex/trial/issues/1170
+---
+
+# Viral Job Board
 
 ## Problem
 
