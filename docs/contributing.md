@@ -1,10 +1,12 @@
 # Contributing
 
-Follow the [Holdex contributing guidelines](https://github.com/holdex/developers) for PR requirements, naming, and review process.
+Follow the
+[Holdex contributing guidelines](https://github.com/holdex/developers) for PR
+requirements, naming, and review process.
 
 ## Project structure
 
-```
+```text
 .github/
   ISSUE_TEMPLATE/job-application.yml   — application form (issue template)
   workflows/
@@ -18,5 +20,6 @@ README.md                              — public-facing front-end, sections man
 
 ## Making changes
 
-- Bug reports and improvements: [open an issue](https://github.com/holdex/trial/issues/new)
+- Bug reports and improvements:
+  [open an issue](https://github.com/holdex/trial/issues/new)
 - Workflow or template changes: fork the repo, open a PR against `main`
