@@ -24,7 +24,7 @@ jobs:
             const issue = context.payload.issue;
             const candidate = issue.user.login;
             const workspace = process.env.GITHUB_WORKSPACE;
-            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/application-follow-up-body.md'), 'utf8')
+            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-follow-up-body.md'), 'utf8')
               .replace('${candidate}', candidate)
               .replaceAll('${issue_number}', issue.number);
             await github.rest.issues.createComment({ 
@@ -37,6 +37,34 @@ jobs:
               await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: ['job-application'] });
             } catch (e) {
               console.log('Could not add label:', e.message);
+            }
+            const positionLabelMap = {
+              'Partner (Entrepreneur in Residence)': 'position/partner',
+              'Marketing Maestro (Head of Marketing)': 'position/marketing-maestro',
+              'UX/UI Designer': 'position/ux-ui-designer',
+              'UX/UI Engineer': 'position/ux-ui-engineer',
+              'Full-Stack Engineer': 'position/full-stack-engineer',
+              'DevOps Engineer': 'position/devops-engineer',
+              'GoLang Engineer': 'position/golang-engineer',
+              'Data Scientist': 'position/data-scientist',
+              'Python Engineer': 'position/python-engineer',
+              'Developer Relations (DevRel)': 'position/devrel',
+              'Senior Smart Contract Developer': 'position/smart-contract-developer',
+              'Executive Assistent': 'position/executive-assistant',
+              'Actuarial Advisor': 'position/actuarial-advisor',
+              'Other': 'position/other',
+            };
+            const body = issue.body || '';
+            const positionMatch = body.match(/###\s*Application Position\s*\n+([^\n]+)/);
+            if (positionMatch) {
+              const positionLabel = positionLabelMap[positionMatch[1].trim()];
+              if (positionLabel) {
+                try {
+                  await github.rest.issues.addLabels({ ...context.repo, issue_number: issue.number, labels: [positionLabel] });
+                } catch (e) {
+                  console.log('Could not add position label:', e.message);
+                }
+              }
             }
 
   reopen-issue:
@@ -80,7 +108,7 @@ jobs:
             // use md file
             const workspace = process.env.GITHUB_WORKSPACE;
             const user = context.payload.pull_request.user.login
-            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/application-merged-body.md'), 'utf8')
+            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-merged-body.md'), 'utf8')
               .replace('${user}', user);
 
             for (const issue_number of issueNumbers) {
