@@ -1,6 +1,6 @@
-# Holdex Trial
+# Holdex: Apply in Public
 
-Build the future of digital assets, AI, and complex software — with a team that moves fast and owns what they ship.
+Build the future of digital assets, AI, and complex software — with a team that moves fast and owns what they ship. Your application is public, your supporters are visible, and the best candidates rise to the top.
 
 ## Open Positions
 
