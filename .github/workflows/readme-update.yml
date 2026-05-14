@@ -22,4 +22,6 @@ jobs:
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          script-path: .github/workflows/readme-update.js
+          script: |
+            const fn = require('./.github/workflows/readme-update.js');
+            await fn({ github, context });
