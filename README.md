@@ -40,8 +40,4 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 ## How to Contribute
 
-This repo is open source. If you want to improve the hiring process, the application flow, or this README — open a PR.
-
-- Bug reports and improvements: [open an issue](https://github.com/holdex/trial/issues/new)
-- Workflow changes: fork the repo, make your change, open a PR against `main`
-- Follow the [Holdex contributing guidelines](https://github.com/holdex/developers)
+See [docs/contributing.md](docs/contributing.md).
