@@ -143,7 +143,7 @@ module.exports = async ({ github, context }) => {
     owner: context.repo.owner,
     repo: context.repo.repo,
     path: 'README.md',
-    message: 'chore(readme): update leaderboard',
+    message: 'chore(readme): update positions and leaderboard',
     content: Buffer.from(readme).toString('base64'),
     sha: fileData.sha,
     committer: { name: 'github-actions[bot]', email: 'github-actions[bot]@users.noreply.github.com' },
