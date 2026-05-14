@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 Hi @${candidate} — thanks for applying!
 Please add your profile by opening a pull request
 that adds a JSON file with your profile under profile-submission.json.
