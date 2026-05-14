@@ -24,4 +24,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fn = require('./.github/workflows/readme-update.js');
-            await fn({ github, context });
+            await fn({ github, context, core });
