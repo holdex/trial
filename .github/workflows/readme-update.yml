@@ -3,8 +3,8 @@ name: Update README
 on:
   schedule:
     - cron: '0 0 * * *'
-  issues:
-    types: [opened, closed, reopened, labeled, unlabeled]
+    - cron: '0 8 * * *'
+    - cron: '0 16 * * *'
 
 jobs:
   update-readme:
