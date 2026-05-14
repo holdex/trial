@@ -1,0 +1,27 @@
+name: Update README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+    - cron: '0 8 * * *'
+    - cron: '0 16 * * *'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild README sections
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fn = require('./.github/workflows/readme-update.js');
+            await fn({ github, context });
