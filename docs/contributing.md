@@ -15,6 +15,8 @@ requirements, naming, and review process.
 docs/
   specs/viral-job-board.md             — unimplemented backlog
   viral-job-board.md                   — shipped behaviour
+scripts/
+  rename-job-application-issues.mjs    — one-time script: backfills title and position labels on existing job-application issues
 README.md                              — public-facing front-end, sections managed by readme-update workflow
 ```
 
