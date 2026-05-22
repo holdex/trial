@@ -5,6 +5,7 @@ const APPLY_URL = 'https://github.com/holdex/trial/issues/new?template=job-appli
 const TOP_N = 10;
 
 const positionLabelMap = {
+  'Partnership Lead': 'position/partnership-lead',
   'Partner (Entrepreneur in Residence)': 'position/partner',
   'Marketing Maestro (Head of Marketing)': 'position/marketing-maestro',
   'UX/UI Designer': 'position/ux-ui-designer',
