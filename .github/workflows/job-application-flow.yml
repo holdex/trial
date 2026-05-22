@@ -39,6 +39,7 @@ jobs:
               console.log('Could not add label:', e.message);
             }
             const positionLabelMap = {
+              'Partnership Lead': 'position/partnership-lead',
               'Partner (Entrepreneur in Residence)': 'position/partner',
               'Marketing Maestro (Head of Marketing)': 'position/marketing-maestro',
               'UX/UI Designer': 'position/ux-ui-designer',

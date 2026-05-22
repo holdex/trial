@@ -9,6 +9,7 @@ body:
     attributes:
       label: "Application Position"
       options:
+        - "Partnership Lead"
         - "Partner (Entrepreneur in Residence)"
         - "Marketing Maestro (Head of Marketing)"
         - "UX/UI Designer"
