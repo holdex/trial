@@ -10,7 +10,7 @@ and the best candidates rise to the top.
 <!-- positions-start -->
 | Role | Applicants |  |
 | ---- | ---------- | --- |
-| UX/UI Designer | 345 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| UX/UI Designer | 346 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Full-Stack Engineer | 150 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Senior Smart Contract Developer | 40 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -195,16 +195,16 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: UX/UI Designer: Adrian Oduma](https://github.com/holdex/trial/issues/1165) | 0 👍 |
-| 2 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1162) | 0 👍 |
-| 3 | [HR: UX/UI Designer: Brendan Ma](https://github.com/holdex/trial/issues/1137) | 0 👍 |
-| 4 | [HR: UX/UI Designer: Darren Minihane](https://github.com/holdex/trial/issues/1127) | 0 👍 |
-| 5 | [HR: UX/UI Designer: Jamie Wong](https://github.com/holdex/trial/issues/1125) | 0 👍 |
-| 6 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1123) | 0 👍 |
-| 7 | [HR: UX/UI Designer: Laura Kim](https://github.com/holdex/trial/issues/1093) | 0 👍 |
-| 8 | [HR: UX/UI Designer: Obinna Arua](https://github.com/holdex/trial/issues/1080) | 0 👍 |
-| 9 | [HR: UX/UI Designer: Yuanfang Li](https://github.com/holdex/trial/issues/1064) | 0 👍 |
-| 10 | [HR: UX/UI Designer: Bruno Neves](https://github.com/holdex/trial/issues/1060) | 0 👍 |
+| 1 | [HR: UX/UI Designer: Bruno Neves](https://github.com/holdex/trial/issues/1180) | 0 👍 |
+| 2 | [HR: UX/UI Designer: Adrian Oduma](https://github.com/holdex/trial/issues/1165) | 0 👍 |
+| 3 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1162) | 0 👍 |
+| 4 | [HR: UX/UI Designer: Brendan Ma](https://github.com/holdex/trial/issues/1137) | 0 👍 |
+| 5 | [HR: UX/UI Designer: Darren Minihane](https://github.com/holdex/trial/issues/1127) | 0 👍 |
+| 6 | [HR: UX/UI Designer: Jamie Wong](https://github.com/holdex/trial/issues/1125) | 0 👍 |
+| 7 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1123) | 0 👍 |
+| 8 | [HR: UX/UI Designer: Laura Kim](https://github.com/holdex/trial/issues/1093) | 0 👍 |
+| 9 | [HR: UX/UI Designer: Obinna Arua](https://github.com/holdex/trial/issues/1080) | 0 👍 |
+| 10 | [HR: UX/UI Designer: Yuanfang Li](https://github.com/holdex/trial/issues/1064) | 0 👍 |
 
 ### UX/UI Engineer
 
