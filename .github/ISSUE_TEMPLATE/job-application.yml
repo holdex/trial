@@ -1,6 +1,6 @@
 name: Job Application Form
 description: Apply for a position at Holdex.
-title: "[Position] Firstname Lastname"
+title: "HR: [Position] Firstname Lastname"
 labels: ["job-application"]
 
 body:
@@ -9,6 +9,7 @@ body:
     attributes:
       label: "Application Position"
       options:
+        - "Partnership Lead"
         - "Partner (Entrepreneur in Residence)"
         - "Marketing Maestro (Head of Marketing)"
         - "UX/UI Designer"
@@ -20,7 +21,7 @@ body:
         - "Python Engineer"
         - "Developer Relations (DevRel)"
         - "Senior Smart Contract Developer"
-        - "Executive Assistent"
+        - "Executive Assistant"
         - "Actuarial Advisor"
         - "Other"
     validations:
@@ -49,7 +50,7 @@ body:
       placeholder: "Enter your Telegram Username"
     validations:
       required: true
-  
+
   - type: input
     id: source
     attributes:
@@ -57,7 +58,7 @@ body:
       placeholder: "Google, referral, X, Behance, etc."
     validations:
       required: false
- 
+
   - type: input
     id: portfolio
     attributes:
@@ -77,14 +78,13 @@ body:
     validations:
       required: true
       pattern: "https?://.*"
-  
+
   - type: markdown
     attributes:
       value: |
-        
+
         ⚠️ **Ensure your portfolio and LinkedIn links include `https://` to be clickable.**
-        
-  
+
   - type: textarea
     id: description
     attributes:
