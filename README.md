@@ -16,7 +16,7 @@ and the best candidates rise to the top.
 | Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | UX/UI Engineer | 22 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Data Scientist | 21 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Marketing Maestro (Head of Marketing) | 16 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | GoLang Engineer | 14 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Actuarial Advisor | 13 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Developer Relations (DevRel) | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -142,14 +142,14 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 |---|-----------|-----------|
 | 1 | [HR: Marketing Maestro (Head of Marketing): Dmitry Kozlov](https://github.com/holdex/trial/issues/1153) | 0 👍 |
 | 2 | [HR: Marketing Maestro (Head of Marketing): Raul Moreno](https://github.com/holdex/trial/issues/1151) | 0 👍 |
-| 3 | [HR: Marketing Maestro (Head of Marketing): Esther Ivy Felix-Ikejiofor](https://github.com/holdex/trial/issues/1131) | 0 👍 |
-| 4 | [HR: Marketing Maestro (Head of Marketing): Davinci Leo](https://github.com/holdex/trial/issues/1122) | 0 👍 |
-| 5 | [HR: Marketing Maestro (Head of Marketing): Suhail Lone](https://github.com/holdex/trial/issues/1088) | 0 👍 |
-| 6 | [HR: Marketing Maestro (Head of Marketing): Dmitry Kozlov](https://github.com/holdex/trial/issues/1085) | 0 👍 |
-| 7 | [HR: Marketing Maestro (Head of Marketing): Mahmud Saladin](https://github.com/holdex/trial/issues/1083) | 0 👍 |
-| 8 | [HR: Marketing Maestro (Head of Marketing): Amelia Rahmawati](https://github.com/holdex/trial/issues/1079) | 0 👍 |
-| 9 | [HR: Marketing Maestro (Head of Marketing): Debby Febrina](https://github.com/holdex/trial/issues/1077) | 0 👍 |
-| 10 | [HR: Marketing Maestro (Head of Marketing): Andy Makkaraseng](https://github.com/holdex/trial/issues/1076) | 0 👍 |
+| 3 | [HR: Marketing Maestro (Head of Marketing): Davinci Leo](https://github.com/holdex/trial/issues/1122) | 0 👍 |
+| 4 | [HR: Marketing Maestro (Head of Marketing): Suhail Lone](https://github.com/holdex/trial/issues/1088) | 0 👍 |
+| 5 | [HR: Marketing Maestro (Head of Marketing): Dmitry Kozlov](https://github.com/holdex/trial/issues/1085) | 0 👍 |
+| 6 | [HR: Marketing Maestro (Head of Marketing): Mahmud Saladin](https://github.com/holdex/trial/issues/1083) | 0 👍 |
+| 7 | [HR: Marketing Maestro (Head of Marketing): Amelia Rahmawati](https://github.com/holdex/trial/issues/1079) | 0 👍 |
+| 8 | [HR: Marketing Maestro (Head of Marketing): Debby Febrina](https://github.com/holdex/trial/issues/1077) | 0 👍 |
+| 9 | [HR: Marketing Maestro (Head of Marketing): Andy Makkaraseng](https://github.com/holdex/trial/issues/1076) | 0 👍 |
+| 10 | [HR: Marketing Maestro (Head of Marketing): Nofero Nofero](https://github.com/holdex/trial/issues/1075) | 0 👍 |
 
 ### Partner (Entrepreneur in Residence)
 
