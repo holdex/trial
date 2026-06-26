@@ -11,7 +11,7 @@ and the best candidates rise to the top.
 | Role | Applicants |  |
 | ---- | ---------- | --- |
 | UX/UI Designer | 346 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Full-Stack Engineer | 151 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Full-Stack Engineer | 152 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Senior Smart Contract Developer | 40 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | UX/UI Engineer | 22 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -19,7 +19,7 @@ and the best candidates rise to the top.
 | Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | GoLang Engineer | 14 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Actuarial Advisor | 13 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Developer Relations (DevRel) | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Developer Relations (DevRel) | 10 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | DevOps Engineer | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Partner (Entrepreneur in Residence) | 5 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Executive Assistant | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -78,13 +78,14 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 |---|-----------|-----------|
 | 1 | [HR: Developer Relations (DevRel): Mahima Thacker](https://github.com/holdex/trial/issues/1166) | 0 👍 |
 | 2 | [HR: Developer Relations (DevRel): Prajal Sharma](https://github.com/holdex/trial/issues/1112) | 0 👍 |
-| 3 | [HR: Developer Relations (DevRel): srujan vuyyuru](https://github.com/holdex/trial/issues/1101) | 0 👍 |
-| 4 | [HR: Developer Relations (DevRel): Prathmesh Ranjan](https://github.com/holdex/trial/issues/1022) | 0 👍 |
-| 5 | [HR: Developer Relations (DevRel): Roland Lopez](https://github.com/holdex/trial/issues/857) | 0 👍 |
-| 6 | [HR: Developer Relations (DevRel): Shantanu Swami](https://github.com/holdex/trial/issues/680) | 0 👍 |
-| 7 | [HR: Developer Relations (DevRel): Akshat Meena](https://github.com/holdex/trial/issues/639) | 0 👍 |
-| 8 | [HR: Developer Relations (DevRel): Ayush Thakur](https://github.com/holdex/trial/issues/633) | 0 👍 |
-| 9 | [HR: Developer Relations (DevRel): Akshaya Adireddy](https://github.com/holdex/trial/issues/100) | 0 👍 |
+| 3 | [HR: Developer Relations (DevRel): Raj Lathigra](https://github.com/holdex/trial/issues/1110) | 0 👍 |
+| 4 | [HR: Developer Relations (DevRel): srujan vuyyuru](https://github.com/holdex/trial/issues/1101) | 0 👍 |
+| 5 | [HR: Developer Relations (DevRel): Prathmesh Ranjan](https://github.com/holdex/trial/issues/1022) | 0 👍 |
+| 6 | [HR: Developer Relations (DevRel): Roland Lopez](https://github.com/holdex/trial/issues/857) | 0 👍 |
+| 7 | [HR: Developer Relations (DevRel): Shantanu Swami](https://github.com/holdex/trial/issues/680) | 0 👍 |
+| 8 | [HR: Developer Relations (DevRel): Akshat Meena](https://github.com/holdex/trial/issues/639) | 0 👍 |
+| 9 | [HR: Developer Relations (DevRel): Ayush Thakur](https://github.com/holdex/trial/issues/633) | 0 👍 |
+| 10 | [HR: Developer Relations (DevRel): Akshaya Adireddy](https://github.com/holdex/trial/issues/100) | 0 👍 |
 
 ### DevOps Engineer
 
