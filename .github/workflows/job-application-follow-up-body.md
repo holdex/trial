@@ -13,9 +13,10 @@ once the first is merged.
 
 ## Step 1: read the guidelines
 
-You are assessed against them from your first pull request onwards.
+Our culture and our rules live in one repository, and you are assessed against
+them from your first pull request onwards.
 
-- <https://github.com/holdex/developers/blob/main/docs/CONTRIBUTING.md>
+- <https://github.com/holdex/developers>
 
 ## Step 2: open your profile pull request
 
