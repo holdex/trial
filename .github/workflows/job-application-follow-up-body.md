@@ -59,7 +59,7 @@ Reactions decide the order candidates appear on the
 Follow us while you are here:
 
 - [Holdex on X](https://x.com/HoldexIo)
-- [Holdex CEO](https://x.com/zolotokrylin)
+- [Holdex CEO](https://bsky.app/profile/zolotokrylin.bsky.social)
 - [LinkedIn](https://www.linkedin.com/company/holdex)
 
 ## Questions
