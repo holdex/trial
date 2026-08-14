@@ -13,8 +13,8 @@ and the best candidates rise to the top.
 | UX/UI Designer | 347 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Full-Stack Engineer | 151 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Senior Smart Contract Developer | 41 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| UX/UI Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| UX/UI Engineer | 22 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Data Scientist | 21 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | GoLang Engineer | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -219,16 +219,16 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: UX/UI Engineer: Theodore Widjaja](https://github.com/holdex/trial/issues/1090) | 0 👍 |
-| 2 | [HR: UX/UI Engineer: Jason Tse](https://github.com/holdex/trial/issues/884) | 0 👍 |
-| 3 | [HR: UX/UI Engineer: Joanna Moura](https://github.com/holdex/trial/issues/868) | 0 👍 |
-| 4 | [HR: UX/UI Engineer: Nixon Nova](https://github.com/holdex/trial/issues/742) | 0 👍 |
-| 5 | [HR: UX/UI Engineer: Windy Miftah](https://github.com/holdex/trial/issues/687) | 0 👍 |
-| 6 | [HR: UX/UI Engineer: Tsz Kin Ng](https://github.com/holdex/trial/issues/673) | 0 👍 |
-| 7 | [HR: UX/UI Engineer: Tazim Sikder](https://github.com/holdex/trial/issues/623) | 0 👍 |
-| 8 | [HR: UX/UI Engineer: Pankaj Maurya](https://github.com/holdex/trial/issues/570) | 0 👍 |
-| 9 | [HR: UX/UI Engineer: Ashadul Islam Samiul](https://github.com/holdex/trial/issues/548) | 0 👍 |
-| 10 | [HR: UX/UI Engineer: Aldiansyah Putra](https://github.com/holdex/trial/issues/395) | 0 👍 |
+| 1 | [HR: UX/UI Engineer: Man Huen Tsoi](https://github.com/holdex/trial/issues/1191) | 0 👍 |
+| 2 | [HR: UX/UI Engineer: Theodore Widjaja](https://github.com/holdex/trial/issues/1090) | 0 👍 |
+| 3 | [HR: UX/UI Engineer: Jason Tse](https://github.com/holdex/trial/issues/884) | 0 👍 |
+| 4 | [HR: UX/UI Engineer: Joanna Moura](https://github.com/holdex/trial/issues/868) | 0 👍 |
+| 5 | [HR: UX/UI Engineer: Nixon Nova](https://github.com/holdex/trial/issues/742) | 0 👍 |
+| 6 | [HR: UX/UI Engineer: Windy Miftah](https://github.com/holdex/trial/issues/687) | 0 👍 |
+| 7 | [HR: UX/UI Engineer: Tsz Kin Ng](https://github.com/holdex/trial/issues/673) | 0 👍 |
+| 8 | [HR: UX/UI Engineer: Tazim Sikder](https://github.com/holdex/trial/issues/623) | 0 👍 |
+| 9 | [HR: UX/UI Engineer: Pankaj Maurya](https://github.com/holdex/trial/issues/570) | 0 👍 |
+| 10 | [HR: UX/UI Engineer: Ashadul Islam Samiul](https://github.com/holdex/trial/issues/548) | 0 👍 |
 <!-- leaderboard-end -->
 
 ## How to Contribute
