@@ -1,27 +1,43 @@
 <!-- markdownlint-disable MD041 -->
 
-# 🎉 Thanks for applying, @${candidate}
+# Your application is live, @${candidate}
 
-![Celebration gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzM3aHRxaWg1NWR5ZXV5b3JxcnlrbjZ2c215aGdiejB1YzF5dG93ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xIsloV7zOmt81G/giphy.gif)
-
-Your application is now public:
 <https://github.com/holdex/trial/issues/${issue_number}>
 
-Your trial is two pull requests.
-The first one is below, and the second one arrives here
-once the first is merged.
+It is public, and it is the thread
+where everything about your application happens.
+
+## How this works
+
+There are no screening calls.
+You pass two gates, and both of them are pull requests in this repository:
+
+1. **Your profile.**
+   It proves you can follow written instructions in GitHub.
+1. **Your trial goal.**
+   It is specific to the role you applied for, it is reviewed by the team,
+   and it arrives in this thread the moment your profile pull request is merged.
+
+Nobody on the team reads your application before
+that first pull request is merged.
+That is deliberate.
+We work across every department in GitHub, async,
+and how you handle a repository tells us more than a CV does.
 
 ## Step 1: read the guidelines
 
 Our culture and our rules live in one repository,
 and you are assessed against them from your first pull request onwards.
+Not following them is the most common reason a contribution is rejected.
 
 - <https://github.com/holdex/developers>
 
 ## Step 2: open your profile pull request
 
-No local setup and no git needed.
-GitHub forks the repository for you when you save the file.
+Read all four points before you start.
+If you do not work in git day to day,
+the editor link below forks the repository for you when you save,
+so this can be done from the browser.
 
 1. Open the profile file in the editor:
    <https://github.com/holdex/trial/edit/main/profile-submission.json>
@@ -47,16 +63,18 @@ GitHub forks the repository for you when you save the file.
    Closes #${issue_number}
    ```
 
-That last line is what links your pull request to this application.
+That last line links your pull request to this application.
 Without it, this issue will not reopen with your trial goal.
 
-## Step 3: share your application
+## What happens next
 
-Ask your network to react with 👍 on this issue.
-Reactions decide the order candidates appear on the
-[leaderboard](https://github.com/holdex/trial#leaderboard).
+Once your profile pull request is merged,
+this issue reopens with your trial goal
+and the conditions it is assessed against.
+If you get something wrong along the way, correct it and push again.
+Getting it right without being told how is part of what is being measured.
 
-Follow us while you are here:
+## Stay close
 
 - [Holdex on X](https://x.com/HoldexIo)
 - [Holdex CEO](https://bsky.app/profile/zolotokrylin.bsky.social)
@@ -64,4 +82,4 @@ Follow us while you are here:
 
 ## Questions
 
-Ask them right here in this issue 😉
+Ask them in this issue.
