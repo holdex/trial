@@ -1,22 +1,19 @@
 <!-- markdownlint-disable MD041 -->
 
-# Your application is live, @${candidate}
-
+**@${candidate}, your application is live:**
 <https://github.com/holdex/trial/issues/${issue_number}>
 
 It is public, and it is the thread
 where everything about your application happens.
 
-## How this works
+### How this works
 
 There are no screening calls.
-You pass two gates, and both of them are pull requests in this repository:
-
-1. **Your profile.**
-   It proves you can follow written instructions in GitHub.
-1. **Your trial goal.**
-   It is specific to the role you applied for, it is reviewed by the team,
-   and it arrives in this thread the moment your profile pull request is merged.
+You pass two gates, and both of them are pull requests in this repository.
+The first proves you can follow written instructions in GitHub.
+The second is your trial goal, specific to the role you applied for,
+reviewed by the team, and posted in this thread the moment the first one is
+merged.
 
 Nobody on the team reads your application before
 that first pull request is merged.
@@ -24,24 +21,18 @@ That is deliberate.
 We work across every department in GitHub, async,
 and how you handle a repository tells us more than a CV does.
 
-## Step 1: read the guidelines
+### Open your profile pull request
 
-Our culture and our rules live in one repository,
-and you are assessed against them from your first pull request onwards.
-Not following them is the most common reason a contribution is rejected.
-
-- <https://github.com/holdex/developers>
-
-## Step 2: open your profile pull request
-
-Read all four points before you start.
+Read all five steps before you start.
 If you do not work in git day to day,
-the editor link below forks the repository for you when you save,
+the editor forks the repository for you when you save,
 so this can be done from the browser.
 
-1. Open the profile file in the editor:
-   <https://github.com/holdex/trial/edit/main/profile-submission.json>
-1. Add your entry at the end of the `team_profiles` list:
+1. Read the [Developer Guidelines](https://github.com/holdex/developers).
+   Not following them is the most common reason a contribution is rejected.
+1. Open
+   [`profile-submission.json`](https://github.com/holdex/trial/edit/main/profile-submission.json)
+   and add your entry at the end of the `team_profiles` list:
 
    ```json
    {
@@ -63,23 +54,21 @@ so this can be done from the browser.
    Closes #${issue_number}
    ```
 
-That last line links your pull request to this application.
-Without it, this issue will not reopen with your trial goal.
+1. Open the pull request.
 
-## What happens next
+> [!IMPORTANT]
+> That last line is what links your pull request to this application.
+> Without it, this issue will not reopen with your trial goal.
+
+### What happens next
 
 Once your profile pull request is merged,
 this issue reopens with your trial goal
 and the conditions it is assessed against.
 If you get something wrong along the way, correct it and push again.
-Getting it right without being told how is part of what is being measured.
+Getting it right without being told how is part of what is measured.
 
-## Stay close
-
-- [Holdex on X](https://x.com/HoldexIo)
-- [Holdex CEO](https://bsky.app/profile/zolotokrylin.bsky.social)
-- [LinkedIn](https://www.linkedin.com/company/holdex)
-
-## Questions
-
-Ask them in this issue.
+Questions go in this issue.
+Follow along on [X](https://x.com/HoldexIo),
+[Bluesky](https://bsky.app/profile/zolotokrylin.bsky.social)
+and [LinkedIn](https://www.linkedin.com/company/holdex).
