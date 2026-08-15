@@ -901,6 +901,16 @@
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/675"
     },
     {
+      "github_handle": "HJKUNST",
+      "full_name": "Laura Kim",
+      "github_trial_issue_link": "https://github.com/holdex/trial/issues/1093"
+    },
+	  {
+		"github_handle": "bkyma10",
+		"full_name": "Brendan Ma",
+		"github_trial_issue_link": "https://github.com/holdex/trial/issues/1137"
+  	}, 
+    {
       "github_handle": "Ananta98",
       "full_name": "Ananta Kusuma P",
       "github_trial_issue_link": "https://github.com/holdex/trial/issues/1095"
@@ -909,6 +919,6 @@
 	    "github_handle": "forvy",
 	    "full_name": "Theodore Widjaja",
   	  "github_trial_issue_link": "https://github.com/holdex/trial/issues/1090"
-	},
+  	}
   ]
 }
