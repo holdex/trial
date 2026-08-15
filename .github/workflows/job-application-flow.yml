@@ -24,8 +24,12 @@ jobs:
             const issue = context.payload.issue;
             const candidate = issue.user.login;
             const workspace = process.env.GITHUB_WORKSPACE;
+            const body = issue.body || '';
+            const positionMatch = body.match(/###\s*Application Position\s*\n+([^\n]+)/);
+            const position = positionMatch ? positionMatch[1].trim() : null;
             const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-follow-up-body.md'), 'utf8')
               .replaceAll('${candidate}', candidate)
+              .replaceAll('${position}', position || 'a role at Holdex')
               .replaceAll('${issue_number}', issue.number);
             await github.rest.issues.createComment({
               owner: context.repo.owner,
@@ -55,8 +59,6 @@ jobs:
               'Actuarial Advisor': 'position/actuarial-advisor',
               'Other': 'position/other',
             };
-            const body = issue.body || '';
-            const positionMatch = body.match(/###\s*Application Position\s*\n+([^\n]+)/);
             if (positionMatch) {
               const positionLabel = positionLabelMap[positionMatch[1].trim()];
               if (positionLabel) {
@@ -74,7 +76,6 @@ jobs:
             }
             const firstNameMatch = body.match(/###\s*First Name\s*\n+([^\n]+)/);
             const lastNameMatch = body.match(/###\s*Last Name\s*\n+([^\n]+)/);
-            const position = positionMatch ? positionMatch[1].trim() : null;
             const firstName = firstNameMatch ? firstNameMatch[1].trim() : null;
             const lastName = lastNameMatch ? lastNameMatch[1].trim() : null;
             if (position && firstName && lastName) {

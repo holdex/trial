@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-**@${candidate}, your application is live:**
+**@${candidate}, your application for ${position} is live:**
 <https://github.com/holdex/trial/issues/${issue_number}>
 
 It is public, and it is the thread
@@ -14,6 +14,10 @@ The first proves you can follow written instructions in GitHub.
 The second is your trial goal, specific to the role you applied for,
 reviewed by the team, and posted in this thread the moment the first one is
 merged.
+
+We keep the assessment simple.
+We look at whether you follow the Contributing guide,
+and whether you hold to the Code of Conduct.
 
 Nobody on the team reads your application before
 that first pull request is merged.
