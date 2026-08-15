@@ -43,7 +43,6 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 > Top candidates per role are reviewed first.
 
 <!-- leaderboard-start -->
-### Actuarial Advisor
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
