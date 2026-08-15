@@ -66,11 +66,15 @@ so this can be done from the browser.
 
 ### What happens next
 
-Once your profile pull request is merged,
-this issue reopens with your trial goal
+Your profile pull request is reviewed within two working days.
+Once it is merged, this issue reopens with your trial goal
 and the conditions it is assessed against.
 If you get something wrong along the way, correct it and push again.
 Getting it right without being told how is part of what is measured.
+
+If no pull request appears within three weeks,
+we close this application with the reason `no PR was submitted`.
+That is not a rejection, and you are welcome to apply again.
 
 Questions go in this issue.
 Follow along on [X](https://x.com/HoldexIo),
