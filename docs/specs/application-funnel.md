@@ -26,8 +26,8 @@ before the candidate has proven they can work in GitHub.
 ## Key results
 
 1. Applicants who open a profile pull request rise from 12.5% to 40%.
-1. Profile pull requests are accepted or rejected within an hour with no human
-   action, replacing an 18 day median.
+1. Every profile pull request gets a result within two working days, against
+   an 18 day median today, and within an hour once the checks decide it.
 1. Candidates whose profile merges and who then start a trial rise from 3% to
    30%.
 
@@ -94,6 +94,9 @@ and the candidate learns the result in the pull request:
    and was opened by the same person.
 1. The pull request title follows the naming convention it was given.
 
+Two working days is the outer bound the candidate is promised,
+and it holds whether the result comes from the checks or from a person.
+
 When every check passes the pull request merges by itself.
 When a check fails the candidate is told which one, and what to change,
 in a comment on their own pull request.
@@ -123,6 +126,9 @@ so the ranking reflects demonstrated effort rather than an empty reaction count.
 An application with no linked pull request is reminded once,
 and closed after three weeks with the reason `no PR was submitted`,
 per [HR-110][hr-110].
+Both the three week window
+and the two working day review time are stated to the candidate in the first
+reply, so neither arrives as a surprise.
 A closed application is not a rejection and the candidate is told so.
 
 ## Out of scope
