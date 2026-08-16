@@ -25,11 +25,15 @@ before the candidate has proven they can work in GitHub.
 
 ## Key results
 
-1. Applicants who open a profile pull request rise from 12.5% to 40%.
+1. Applicants who open a profile pull request rise from 8% to 40%.
 1. Every profile pull request gets a result within two working days, against
-   an 18 day median today, and within an hour once the checks decide it.
-1. Candidates whose profile merges and who then start a trial rise from 3% to
+   a 41 day median today, and within an hour once the checks decide it.
+1. Candidates whose profile merges and who then start a trial rise from 1% to
    30%.
+
+Baselines are the measured funnel, rebuilt weekly:
+
+- <https://github.com/holdex/hr-internal/blob/main/docs/reports/application-funnel.md>
 
 ## User Types
 
