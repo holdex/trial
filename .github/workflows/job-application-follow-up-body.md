@@ -1,4 +1,5 @@
-<!-- markdownlint-disable MD041 -->
+<!-- markdownlint-disable MD041 MD057 -->
+<!-- This is a template. ${profile_link} is substituted by the workflow. -->
 
 **@${candidate}, your application for ${position} is live:**
 <https://github.com/holdex/trial/issues/${issue_number}>
@@ -34,9 +35,8 @@ so this can be done from the browser.
 
 1. Read the [Developer Guidelines](https://github.com/holdex/developers).
    Not following them is the most common reason a contribution is rejected.
-1. Open
-   [`profile-submission.json`](https://github.com/holdex/trial/edit/main/profile-submission.json)
-   and add your entry at the end of the `team_profiles` list:
+1. Open [your profile file](${profile_link}), which is already filled in,
+   and replace `Your Name` with yours:
 
    ```json
    {
@@ -66,10 +66,12 @@ so this can be done from the browser.
 
 ### What happens next
 
-Your profile pull request is reviewed within two working days.
-Once it is merged, this issue reopens with your trial goal
+Your profile pull request is checked within minutes, by machine.
+If every check passes it merges on its own,
+and this issue reopens with your trial goal
 and the conditions it is assessed against.
-If you get something wrong along the way, correct it and push again.
+If one fails, a comment on your pull request says which one and what to change.
+Correct it, push again, and it is checked again.
 Getting it right without being told how is part of what is measured.
 
 If no pull request appears within three weeks,

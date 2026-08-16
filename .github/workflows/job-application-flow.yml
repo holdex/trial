@@ -27,9 +27,22 @@ jobs:
             const body = issue.body || '';
             const positionMatch = body.match(/###\s*Application Position\s*\n+([^\n]+)/);
             const position = positionMatch ? positionMatch[1].trim() : null;
+            // GitHub opens a new-file editor with this content already typed
+            // in, forks the repository on save, and offers the pull request.
+            // The candidate never touches git.
+            const template = JSON.stringify({
+              github_handle: candidate,
+              full_name: 'Your Name',
+              github_trial_issue_link: `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${issue.number}`
+            }, null, 2);
+            const profileLink =
+              `https://github.com/${context.repo.owner}/${context.repo.repo}/new/main` +
+              `?filename=${encodeURIComponent(`profiles/${candidate}.json`)}` +
+              `&value=${encodeURIComponent(template)}`;
             const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-follow-up-body.md'), 'utf8')
               .replaceAll('${candidate}', candidate)
               .replaceAll('${position}', position || 'a role at Holdex')
+              .replaceAll('${profile_link}', profileLink)
               .replaceAll('${issue_number}', issue.number);
             await github.rest.issues.createComment({
               owner: context.repo.owner,

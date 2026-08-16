@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/holdex/trial/blob/main/schema/profile.schema.json",
+  "title": "Candidate profile",
+  "description": "One candidate, one file, at profiles/<github_handle>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["github_handle", "full_name", "github_trial_issue_link"],
+  "properties": {
+    "github_handle": {
+      "type": "string",
+      "description": "The GitHub account opening the pull request.",
+      "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$"
+    },
+    "full_name": {
+      "type": "string",
+      "description": "The name the candidate wants to be known by.",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "github_trial_issue_link": {
+      "type": "string",
+      "description": "The candidate's own application issue in this repository.",
+      "pattern": "^https://github\\.com/holdex/trial/issues/[0-9]+$"
+    }
+  }
+}
