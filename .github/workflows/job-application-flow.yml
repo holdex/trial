@@ -113,52 +113,62 @@ jobs:
           script: |
             const fs = require('fs');
             const path = require('path');
-            const owner = context.repo.owner.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const repo = context.repo.repo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const prBody = context.payload.pull_request.body || '';
-            const regex = new RegExp(
-              `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
-              'mi'
-            );
+            const pr = context.payload.pull_request;
 
-            let remaining = prBody;
-            const matches = [];
-
-            while (true) {
-              const match = regex.exec(remaining);
-              if (!match) break;
-
-              matches.push(match);
-
-              // move forward in the string manually
-              remaining = remaining.slice(match.index + match[0].length);
+            // Only a profile submission hands out a trial goal. Without this
+            // gate every merged pull request in the repository runs the rest of
+            // this job, which reopens the Problem it just closed and greets its
+            // own author as a candidate.
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              ...context.repo, pull_number: pr.number, per_page: 100
+            });
+            if (!files.some(f => f.filename.startsWith('profiles/'))) {
+              console.log('No profile in this pull request. Nothing to reopen.');
+              return;
             }
 
-            // Extract the numbers and remove duplicates
-            const issueNumbers = [...new Set(matches.map(m => parseInt(m[1] || m[2], 10)))];
+            const owner = context.repo.owner.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const repo = context.repo.repo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            // Code spans and fenced blocks are examples, not instructions. A
+            // description explaining `Closes #123` must not close #123.
+            const prose = (pr.body || '')
+              .replace(/```[\s\S]*?```/g, ' ')
+              .replace(/`[^`]*`/g, ' ');
+            const regex = new RegExp(
+              `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${owner}\\/${repo}\\/issues\\/(\\d+))`,
+              'gmi'
+            );
+            const issueNumbers = [...new Set(
+              [...prose.matchAll(regex)].map(m => parseInt(m[1] || m[2], 10))
+            )];
 
-            // use md file
             const workspace = process.env.GITHUB_WORKSPACE;
-            const user = context.payload.pull_request.user.login
-            const commentBody = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-merged-body.md'), 'utf8')
-              .replace('${user}', user);
+            const template = fs.readFileSync(path.join(workspace, '.github/workflows/job-application-merged-body.md'), 'utf8');
 
             for (const issue_number of issueNumbers) {
               try {
-                // The actual command to reopen
-                await github.rest.issues.update({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issue_number,
-                  state: 'open'
+                const { data: issue } = await github.rest.issues.get({
+                  ...context.repo, issue_number
                 });
+                // Never touch anything but the author's own application. A
+                // candidate who links someone else's issue moves nothing.
+                if (!issue.labels.some(l => l.name === 'job-application')) {
+                  console.log(`#${issue_number} is not an application. Skipping.`);
+                  continue;
+                }
+                if (issue.user.login.toLowerCase() !== pr.user.login.toLowerCase()) {
+                  console.log(`#${issue_number} belongs to ${issue.user.login}, not ${pr.user.login}. Skipping.`);
+                  continue;
+                }
 
+                await github.rest.issues.update({
+                  ...context.repo, issue_number, state: 'open'
+                });
                 await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issue_number,
-                  body: commentBody
-                 });
+                  ...context.repo,
+                  issue_number,
+                  body: template.replaceAll('${user}', issue.user.login)
+                });
               } catch (error) {
                 console.log(`Could not reopen issue #${issue_number}: ${error.message}`);
               }
