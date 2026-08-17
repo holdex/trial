@@ -232,8 +232,11 @@ async function main() {
     );
     throw new Error(`Merge failed: ${merged.status} ${JSON.stringify(merged.body)}`);
   }
-  await say("**Merged.** Your application reopens with your trial goal.");
+  // Say it only once it is true: claiming the application reopened before the
+  // handover has happened leaves the candidate holding a false statement when
+  // it fails.
   await handOver(verdict.application, pull.user.login);
+  await say("**Merged.** Your application reopens with your trial goal.");
 }
 
 /**
@@ -253,8 +256,10 @@ async function handOver(issue_number, candidate) {
     method: "PATCH",
     body: JSON.stringify({ state: "open" }),
   });
+  // Stop here rather than commenting a trial goal onto an application that is
+  // still closed.
   if (!reopened.ok) {
-    console.error(`Could not reopen #${issue_number}: ${reopened.status}`);
+    throw new Error(`Could not reopen #${issue_number}: ${reopened.status}`);
   }
   const commented = await api(`/repos/${REPO}/issues/${issue_number}/comments`, {
     method: "POST",
