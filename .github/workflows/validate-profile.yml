@@ -1,0 +1,34 @@
+name: Validate Profile
+
+# pull_request_target so the token can merge a pull request that comes from a
+# fork. The job never checks out or runs anything from the fork: actions/checkout
+# takes the base branch, and the submission is read through the API.
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited, ready_for_review]
+    paths:
+      - "profiles/**"
+      # Someone following an older comment submits here instead. The script
+      # answers them rather than leaving them waiting on nothing.
+      - "profile-submission.json"
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check the profile, and merge it when it passes
+        run: node scripts/validate-profile.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}

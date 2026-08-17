@@ -4,27 +4,7 @@ const path = require('path');
 const APPLY_URL = 'https://github.com/holdex/trial/issues/new?template=job-application.yml';
 const TOP_N = 10;
 
-const positionLabelMap = {
-  'Partnership Lead': 'position/partnership-lead',
-  'Partner (Entrepreneur in Residence)': 'position/partner',
-  'Marketing Maestro (Head of Marketing)': 'position/marketing-maestro',
-  'UX/UI Designer': 'position/ux-ui-designer',
-  'UX/UI Engineer': 'position/ux-ui-engineer',
-  'Full-Stack Engineer': 'position/full-stack-engineer',
-  'DevOps Engineer': 'position/devops-engineer',
-  'GoLang Engineer': 'position/golang-engineer',
-  'Data Scientist': 'position/data-scientist',
-  'Python Engineer': 'position/python-engineer',
-  'Developer Relations (DevRel)': 'position/devrel',
-  'Senior Smart Contract Developer': 'position/smart-contract-developer',
-  'Executive Assistant': 'position/executive-assistant',
-  'Actuarial Advisor': 'position/actuarial-advisor',
-  'Other': 'position/other',
-};
-
-const labelToPosition = Object.fromEntries(
-  Object.entries(positionLabelMap).map(([k, v]) => [v, k])
-);
+const { labelToPosition } = require('./positions.js');
 
 async function fetchAllIssues(github, context) {
   let allIssues = [];
