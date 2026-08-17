@@ -30,7 +30,7 @@ against [`schema/profile.schema.json`](../schema/profile.schema.json):
 1. Your pull request changes this one file and nothing else.
 1. The file is valid JSON with exactly the three fields above.
 1. The handle in the file is the account opening the pull request.
-1. The linked application is yours, open, and labelled `job-application`.
+1. The linked application is yours, and labelled `job-application`.
 1. The pull request is titled as described above.
 
 All five pass and it merges by itself,

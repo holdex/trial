@@ -71,6 +71,9 @@ async function check(pull, files) {
     );
   }
 
+  if (!pull.head.repo) {
+    return fail("The branch this pull request came from is gone. Open it again from a fork that still exists.");
+  }
   const content = await api(
     `/repos/${pull.head.repo.full_name}/contents/${encodeURIComponent(file.filename)}?ref=${pull.head.sha}`,
   );
@@ -146,9 +149,6 @@ async function check(pull, files) {
   if (application.user.login.toLowerCase() !== author.toLowerCase()) {
     return fail(`#${linked[1]} was opened by \`${application.user.login}\`. Link your own application.`);
   }
-  if (application.state !== "open" && !application.state_reason) {
-    return fail(`#${linked[1]} is closed.`);
-  }
 
   return pass;
 }
@@ -180,9 +180,22 @@ async function main() {
   }
 
   const files = (await api(`/repos/${REPO}/pulls/${PR_NUMBER}/files?per_page=100`)).body;
-  // A pull request that touches no profile is ordinary repository work and is
-  // none of this check's business.
   if (!files.some((f) => f.filename.startsWith("profiles/"))) {
+    // Someone following an older comment edits the file profiles replaced.
+    // Answer them, since silence is what this whole change exists to end.
+    if (files.some((f) => f.filename === "profile-submission.json")) {
+      console.log("Rejected: submitted to profile-submission.json.");
+      await say(
+        `**Not merged yet.** Profiles moved to one file per candidate. ` +
+          `Put yours in \`profiles/${pull.user.login}.json\` and leave ` +
+          "`profile-submission.json` alone. See " +
+          "[profiles/README.md](https://github.com/holdex/trial/blob/main/profiles/README.md).",
+      );
+      process.exitCode = 1;
+      return;
+    }
+    // Anything else is ordinary repository work and none of this check's
+    // business.
     console.log("No profile in this pull request. Nothing to check.");
     return;
   }

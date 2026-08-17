@@ -8,6 +8,9 @@ on:
     types: [opened, reopened, synchronize, edited, ready_for_review]
     paths:
       - "profiles/**"
+      # Someone following an older comment submits here instead. The script
+      # answers them rather than leaving them waiting on nothing.
+      - "profile-submission.json"
 
 permissions:
   contents: write
