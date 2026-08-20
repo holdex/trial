@@ -96,10 +96,8 @@ Those three fields are everything the funnel stores about a candidate.
 The repository is public,
 opening the pull request is the act of publishing them,
 and the record stays for as long as the repository does.
-A candidate who wants it gone deletes their own file in a pull request,
-or asks in their application issue and a reviewer does it.
-Removing the record is not a withdrawal:
-the application issue stays open unless they ask for that too.
+A candidate can have it taken down, by pull request or by asking,
+and [HR-310][hr-310] holds what that obliges us to do.
 
 Within minutes the submission is checked,
 and the candidate learns the result in the pull request:
@@ -129,6 +127,8 @@ application's `position/*` label, by name and by link, never a filtered list to
 browse.
 The handover states the working conditions from that goal: where the work lives,
 who to invite as reviewers, and what "done" means.
+It also gives them the line to post back here when they begin,
+which is what puts them in front of a reviewer.
 
 When no open goal carries the label,
 or the application carries no `position/*` label at all,
@@ -139,22 +139,47 @@ and the gap lands in a human queue instead of failing silently.
 
 ## Seeing where an application stands
 
-An application carries exactly one stage label, set by automation:
+An application carries exactly one stage label:
 
 1. `stage/applied`, added when the application is opened.
 1. `stage/profile-merged`, added when the profile pull request merges.
-1. `stage/trial-started`, added when the candidate posts the link to their
-   trial repository in the application issue, which is the first signal this
-   repository can see that the trial has begun.
+1. `stage/trial-claimed`, added when the candidate says so in the application
+   issue, in the exact form the handover gave them:
+   `trial started: <url of your trial repository>`.
+1. `stage/trial-started`, added by a reviewer who has seen the work.
 
 Each transition removes the previous stage label,
 so the current stage is readable from the issue alone.
 `job-application` is not a stage: it says what the issue is,
 and every application keeps it for its whole life.
 
-The leaderboard ranks by stage first, furthest through the funnel highest,
-and uses 👍 reactions only to separate candidates at the same stage,
-so the ranking reflects demonstrated effort rather than an empty reaction count.
+### Claiming the trial
+
+The claim is the third instruction a candidate is asked to follow exactly,
+and it is read the same way as the first two.
+Only a comment from the person who opened the application counts,
+and only in that form, so ordinary conversation in the thread changes nothing.
+The claim is answered in the thread, so the candidate knows it registered.
+
+A claim is not proof.
+The work sits in the candidate's own private repository,
+which nothing here can read,
+so `stage/trial-claimed` says only that they told us.
+What it buys them is a reviewer:
+the label is the queue a reviewer works through under [HR-290][hr-290],
+and the reviewer moves the application to `stage/trial-started`
+once there is work to see.
+
+### Ranking
+
+The leaderboard ranks by stage,
+counting only the stages this repository can stand behind:
+an application opened, a profile merged, a trial confirmed by a reviewer.
+A claim on its own lifts nobody above a merged profile,
+because a comment costs nothing
+and the ranking is meant to show demonstrated work.
+Reactions separate candidates who sit at the same stage,
+and never move one past another.
 
 ## Going stale
 
@@ -177,3 +202,4 @@ A closed application is not a rejection and the candidate is told so.
 [hr-100]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-100.md
 [hr-110]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-110.md
 [hr-290]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-290.md
+[hr-310]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-310.md
