@@ -8,6 +8,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const { renderHandover } = require('./render.js');
+const { CLOSING_KEYWORDS } = require('../../scripts/profile-rules.js');
 
 /**
  * Issue numbers a pull request description actually claims to close.
@@ -23,7 +25,7 @@ function linkedIssueNumbers(body, owner, repo) {
     .replace(/`[^`]*`/g, ' ');
   const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const pattern = new RegExp(
-    `(?:resolves|closes):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${escape(owner)}\\/${escape(repo)}\\/issues\\/(\\d+))`,
+    `(?:${CLOSING_KEYWORDS.join('|')}):?\\s*(?:#(\\d+)|https:\\/\\/github\\.com\\/${escape(owner)}\\/${escape(repo)}\\/issues\\/(\\d+))`,
     'gmi'
   );
   return [...new Set([...prose.matchAll(pattern)].map((m) => parseInt(m[1] || m[2], 10)))];
@@ -69,7 +71,7 @@ module.exports = async ({ github, context, core }) => {
         await github.rest.issues.createComment({
           ...context.repo,
           issue_number,
-          body: template.replaceAll('${user}', issue.user.login),
+          body: renderHandover(template, issue.user.login),
         });
       } catch (error) {
         console.log(`Could not reopen issue #${issue_number}: ${error.message}`);

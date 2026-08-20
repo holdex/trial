@@ -16,17 +16,16 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import render from "../.github/workflows/render.js";
+import rules from "./profile-rules.js";
+
+const { FIELDS, HANDLE_PATTERN, ISSUE_LINK_PATTERN, LINK_PATTERN, TITLE_PATTERN } = rules;
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || "holdex/trial";
 const PR_NUMBER = process.env.PR_NUMBER;
 const MARKER = "<!-- profile-check -->";
-const TITLE_PATTERN = /^chore\(profile\): /;
-const LINK_PATTERN = /(?:closes|resolves|fixes):?\s*(?:#(\d+)|https:\/\/github\.com\/holdex\/trial\/issues\/(\d+))/i;
-const HANDLE_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$/;
-const ISSUE_LINK_PATTERN = /^https:\/\/github\.com\/holdex\/trial\/issues\/(\d+)$/;
-const FIELDS = ["github_handle", "full_name", "github_trial_issue_link"];
 
 if (!TOKEN || !PR_NUMBER) {
   console.error("Error: GITHUB_TOKEN and PR_NUMBER are both required.");
@@ -263,7 +262,7 @@ async function handOver(issue_number, candidate) {
   }
   const commented = await api(`/repos/${REPO}/issues/${issue_number}/comments`, {
     method: "POST",
-    body: JSON.stringify({ body: template.replaceAll("${user}", candidate) }),
+    body: JSON.stringify({ body: render.renderHandover(template, candidate) }),
   });
   if (!commented.ok) {
     throw new Error(`Handover comment failed: ${commented.status}`);
