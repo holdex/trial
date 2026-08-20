@@ -17,6 +17,10 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import trialGoal from "../.github/workflows/trial-goal.js";
+
+const { GOAL_LABEL, NEEDS_A_PERSON, positionLabel, pickGoal, renderHandover } = trialGoal;
+
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || "holdex/trial";
@@ -154,7 +158,7 @@ async function check(pull, files) {
     return fail(`#${linked[1]} was opened by \`${application.user.login}\`. Link your own application.`);
   }
 
-  return pass(Number(linked[1]));
+  return pass(application);
 }
 
 /** One comment per pull request, rewritten rather than repeated. */
@@ -217,7 +221,13 @@ async function main() {
   }
 
   console.log("Accepted.");
-  if (DRY_RUN) return;
+  if (DRY_RUN) {
+    // The handover is the half of this script a candidate actually reads, so
+    // a dry run that stopped at "Accepted" left the interesting part unseen.
+    const { body } = await handoverBody(verdict.application, pull.user.login);
+    console.log(`\n--- handover on #${verdict.application.number} ---\n${body}`);
+    return;
+  }
 
   const merged = await api(`/repos/${REPO}/pulls/${PR_NUMBER}/merge`, {
     method: "PUT",
@@ -235,8 +245,37 @@ async function main() {
   // Say it only once it is true: claiming the application reopened before the
   // handover has happened leaves the candidate holding a false statement when
   // it fails.
-  await handOver(verdict.application, pull.user.login);
-  await say("**Merged.** Your application reopens with your trial goal.");
+  const goal = await handOver(verdict.application, pull.user.login);
+  await say(
+    goal
+      ? `**Merged.** Your application reopens with your trial goal, #${goal.number}.`
+      : "**Merged.** Your application reopens, and a reviewer picks your trial goal there.",
+  );
+}
+
+/** The open goal for an application's position, or null when there is none. */
+async function goalFor(application) {
+  const position = positionLabel(application.labels);
+  if (!position) return null;
+  const labels = encodeURIComponent(`${GOAL_LABEL},${position}`);
+  const found = await api(`/repos/${REPO}/issues?state=open&labels=${labels}&per_page=100`);
+  if (!found.ok) {
+    // A goal we could not read is not a goal we can name. Fall through to the
+    // wording that promises a person, which is true either way.
+    console.log(`Could not list goals for ${position}: ${found.status}`);
+    return null;
+  }
+  return pickGoal(found.body);
+}
+
+/** The handover comment, as the candidate will read it. */
+async function handoverBody(application, candidate) {
+  const template = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "..", ".github/workflows/job-application-merged-body.md"),
+    "utf8",
+  );
+  const goal = await goalFor(application);
+  return { goal, body: renderHandover(template, { user: candidate, repo: REPO, goal }) };
 }
 
 /**
@@ -247,11 +286,9 @@ async function main() {
  * that job, a submission merged by this script would close the candidate's
  * application and hand them nothing.
  */
-async function handOver(issue_number, candidate) {
-  const template = readFileSync(
-    join(dirname(fileURLToPath(import.meta.url)), "..", ".github/workflows/job-application-merged-body.md"),
-    "utf8",
-  );
+async function handOver(application, candidate) {
+  const issue_number = application.number;
+  const { goal, body } = await handoverBody(application, candidate);
   const reopened = await api(`/repos/${REPO}/issues/${issue_number}`, {
     method: "PATCH",
     body: JSON.stringify({ state: "open" }),
@@ -263,12 +300,23 @@ async function handOver(issue_number, candidate) {
   }
   const commented = await api(`/repos/${REPO}/issues/${issue_number}/comments`, {
     method: "POST",
-    body: JSON.stringify({ body: template.replaceAll("${user}", candidate) }),
+    body: JSON.stringify({ body }),
   });
   if (!commented.ok) {
     throw new Error(`Handover comment failed: ${commented.status}`);
   }
-  console.log(`Handed over the trial goal on #${issue_number}.`);
+  if (!goal) {
+    // The comment just promised a person. Label it so one arrives.
+    const flagged = await api(`/repos/${REPO}/issues/${issue_number}/labels`, {
+      method: "POST",
+      body: JSON.stringify({ labels: [NEEDS_A_PERSON] }),
+    });
+    if (!flagged.ok) console.log(`Could not flag #${issue_number}: ${flagged.status}`);
+    console.log(`No goal for #${issue_number}. Flagged for a reviewer.`);
+    return null;
+  }
+  console.log(`Handed #${issue_number} the goal #${goal.number}.`);
+  return goal;
 }
 
 main().catch((error) => {

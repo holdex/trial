@@ -9,6 +9,14 @@
 const fs = require('fs');
 const path = require('path');
 
+const {
+  GOAL_LABEL,
+  NEEDS_A_PERSON,
+  positionLabel,
+  pickGoal,
+  renderHandover,
+} = require('./trial-goal.js');
+
 /**
  * Issue numbers a pull request description actually claims to close.
  *
@@ -27,6 +35,26 @@ function linkedIssueNumbers(body, owner, repo) {
     'gmi'
   );
   return [...new Set([...prose.matchAll(pattern)].map((m) => parseInt(m[1] || m[2], 10)))];
+}
+
+/** The open goal for an application's position, or null when there is none. */
+async function goalFor(github, repo, labels) {
+  const position = positionLabel(labels);
+  if (!position) return null;
+  try {
+    const issues = await github.paginate(github.rest.issues.listForRepo, {
+      ...repo,
+      state: 'open',
+      labels: `${GOAL_LABEL},${position}`,
+      per_page: 100,
+    });
+    return pickGoal(issues);
+  } catch (error) {
+    // A goal we could not read is not a goal we can name. Fall through to the
+    // wording that promises a person, which is true either way.
+    console.log(`Could not list goals for ${position}: ${error.message}`);
+    return null;
+  }
 }
 
 module.exports = async ({ github, context, core }) => {
@@ -65,12 +93,23 @@ module.exports = async ({ github, context, core }) => {
           continue;
         }
 
+        const goal = await goalFor(github, context.repo, issue.labels);
+
         await github.rest.issues.update({ ...context.repo, issue_number, state: 'open' });
         await github.rest.issues.createComment({
           ...context.repo,
           issue_number,
-          body: template.replaceAll('${user}', issue.user.login),
+          body: renderHandover(template, {
+            user: issue.user.login,
+            repo: `${context.repo.owner}/${context.repo.repo}`,
+            goal,
+          }),
         });
+        if (!goal) {
+          // The comment just promised a person. Label it so one arrives.
+          await github.rest.issues.addLabels({ ...context.repo, issue_number, labels: [NEEDS_A_PERSON] });
+          console.log(`No goal for #${issue_number}. Flagged for a reviewer.`);
+        }
       } catch (error) {
         console.log(`Could not reopen issue #${issue_number}: ${error.message}`);
       }
