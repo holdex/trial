@@ -15,7 +15,7 @@ This spec describes the funnel as a self-service path: one set of instructions,
 a submission that needs no local git,
 a machine that accepts or rejects the profile in seconds,
 and a role-matched trial goal handed over the moment the profile lands.
-A human enters only when a candidate has already passed both gates.
+A human enters only once the profile gate has passed.
 
 ## Objective
 
@@ -27,7 +27,7 @@ before the candidate has proven they can work in GitHub.
 
 1. Applicants who open a profile pull request rise from 8% to 40%.
 1. Every profile pull request gets a result within two working days, against
-   a 41 day median today, and within an hour once the checks decide it.
+   a 41-day median today, and within an hour once the checks decide it.
 1. Candidates whose profile merges and who then start a trial rise from 1% to
    30%.
 
@@ -41,7 +41,8 @@ Baselines are the measured funnel, rebuilt weekly:
 yet been offered a trial.
 
 **Reviewer**: a Holdex team member who assesses trial work.
-A reviewer never sees a candidate before both automated gates pass.
+A reviewer never sees a candidate before the profile gate passes,
+and the trial goal is the first thing they grade.
 
 ## Key Concepts
 
@@ -58,9 +59,12 @@ until the first one passes.
 
 ### Trial goals live in the repository
 
-Every open position has a trial goal held in `docs/trial-goals/`,
-one file per goal plus an index that maps each `position/*` label to its goal.
-A position with no goal file is not advertised, per [HR-100][hr-100].
+Every open position has a trial goal,
+opened as a Goal issue carrying that position's `position/*` label,
+with its spec under `docs/specs/`.
+The label is what ties a goal to a role,
+so a goal without one can never reach a candidate.
+A position with no goal is not advertised, per [HR-100][hr-100].
 The goals mirror how the team actually operates: a candidate writes the Goal,
 defines the Problems under it, and resolves them by pull request,
 following the [Developer Guidelines][guidelines].
@@ -72,7 +76,7 @@ That reply is the whole contract, and it contains:
 
 1. The single link to the Developer Guidelines that they will be assessed
    against.
-1. A one click link that opens their profile file already filled in, so no
+1. A one-click link that opens their profile file already filled in, so no
    local git, fork, or branch is needed.
 1. The exact pull request title to use, and the exact body line that links the
    pull request back to the application.
@@ -87,6 +91,15 @@ The candidate adds one file, `profiles/<github-handle>.json`,
 holding their handle, full name, and the URL of their application issue.
 One file per candidate means two candidates never touch the same lines,
 so a profile submission cannot conflict with another.
+
+Those three fields are everything the funnel stores about a candidate.
+The repository is public,
+opening the pull request is the act of publishing them,
+and the record stays for as long as the repository does.
+A candidate who wants it gone deletes their own file in a pull request,
+or asks in their application issue and a reviewer does it.
+Removing the record is not a withdrawal:
+the application issue stays open unless they ask for that too.
 
 Within minutes the submission is checked,
 and the candidate learns the result in the pull request:
@@ -111,18 +124,36 @@ so no team member intervenes to fix it for them.
 ## Starting the trial
 
 When the profile merges,
-the application reopens and the candidate is handed the trial goal
-for the position they applied to, by name and by link,
-not a filtered list to browse.
-The handover states the working conditions from the goal file:
-where the work lives, who to invite as reviewers, and what "done" means.
+the application reopens and the candidate is handed the open goal carrying their
+application's `position/*` label, by name and by link, never a filtered list to
+browse.
+The handover states the working conditions from that goal: where the work lives,
+who to invite as reviewers, and what "done" means.
+
+When no open goal carries the label,
+or the application carries no `position/*` label at all,
+the candidate is told a reviewer will follow up with their goal,
+and the application is labelled `review-required`.
+The candidate is never sent to an empty list or a dead link,
+and the gap lands in a human queue instead of failing silently.
 
 ## Seeing where an application stands
 
-An application carries its stage as a label, set by automation: applied,
-profile merged, trial started.
-The leaderboard ranks candidates by how far they have moved through the funnel,
-with reactions breaking ties,
+An application carries exactly one stage label, set by automation:
+
+1. `stage/applied`, added when the application is opened.
+1. `stage/profile-merged`, added when the profile pull request merges.
+1. `stage/trial-started`, added when the candidate posts the link to their
+   trial repository in the application issue, which is the first signal this
+   repository can see that the trial has begun.
+
+Each transition removes the previous stage label,
+so the current stage is readable from the issue alone.
+`job-application` is not a stage: it says what the issue is,
+and every application keeps it for its whole life.
+
+The leaderboard ranks by stage first, furthest through the funnel highest,
+and uses 👍 reactions only to separate candidates at the same stage,
 so the ranking reflects demonstrated effort rather than an empty reaction count.
 
 ## Going stale
@@ -130,8 +161,8 @@ so the ranking reflects demonstrated effort rather than an empty reaction count.
 An application with no linked pull request is reminded once,
 and closed after three weeks with the reason `no PR was submitted`,
 per [HR-110][hr-110].
-Both the three week window
-and the two working day review time are stated to the candidate in the first
+Both the three-week window
+and the two-working-day review time are stated to the candidate in the first
 reply, so neither arrives as a surprise.
 A closed application is not a rejection and the candidate is told so.
 
