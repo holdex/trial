@@ -16,17 +16,19 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  FIELDS,
+  HANDLE_PATTERN,
+  ISSUE_LINK_PATTERN,
+  LINK_PATTERN,
+  TITLE_PATTERN,
+} from "./profile-rules.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || "holdex/trial";
 const PR_NUMBER = process.env.PR_NUMBER;
 const MARKER = "<!-- profile-check -->";
-const TITLE_PATTERN = /^chore\(profile\): /;
-const LINK_PATTERN = /(?:closes|resolves|fixes):?\s*(?:#(\d+)|https:\/\/github\.com\/holdex\/trial\/issues\/(\d+))/i;
-const HANDLE_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$/;
-const ISSUE_LINK_PATTERN = /^https:\/\/github\.com\/holdex\/trial\/issues\/(\d+)$/;
-const FIELDS = ["github_handle", "full_name", "github_trial_issue_link"];
 
 if (!TOKEN || !PR_NUMBER) {
   console.error("Error: GITHUB_TOKEN and PR_NUMBER are both required.");

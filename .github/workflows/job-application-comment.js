@@ -41,6 +41,20 @@ function profileLink({ owner, repo }, candidate, issueNumber) {
 /** The fork has to exist before the editor link above resolves. */
 const forkLink = ({ owner, repo }) => `https://github.com/${owner}/${repo}/fork`;
 
+/**
+ * The reply a candidate gets, with every placeholder filled in. Kept separate
+ * from the API call so a test can read the exact text we would post.
+ */
+function renderFollowUp(template, { repo, candidate, position, issueNumber }) {
+  return template
+    .replaceAll('${candidate}', candidate)
+    .replaceAll('${position}', position || 'a role at Holdex')
+    .replaceAll('${repo}', repo.repo)
+    .replaceAll('${fork_link}', forkLink(repo))
+    .replaceAll('${profile_link}', profileLink(repo, candidate, issueNumber))
+    .replaceAll('${issue_number}', issueNumber);
+}
+
 module.exports = async ({ github, context, core }) => {
   try {
     const issue = context.payload.issue;
@@ -55,13 +69,12 @@ module.exports = async ({ github, context, core }) => {
     await github.rest.issues.createComment({
       ...context.repo,
       issue_number: issue.number,
-      body: template
-        .replaceAll('${candidate}', candidate)
-        .replaceAll('${position}', position || 'a role at Holdex')
-        .replaceAll('${repo}', context.repo.repo)
-        .replaceAll('${fork_link}', forkLink(context.repo))
-        .replaceAll('${profile_link}', profileLink(context.repo, candidate, issue.number))
-        .replaceAll('${issue_number}', issue.number),
+      body: renderFollowUp(template, {
+        repo: context.repo,
+        candidate,
+        position,
+        issueNumber: issue.number,
+      }),
     });
 
     const labels = ['job-application'];
@@ -92,3 +105,8 @@ module.exports = async ({ github, context, core }) => {
     core.setFailed(error.message);
   }
 };
+
+module.exports.field = field;
+module.exports.forkLink = forkLink;
+module.exports.profileLink = profileLink;
+module.exports.renderFollowUp = renderFollowUp;
