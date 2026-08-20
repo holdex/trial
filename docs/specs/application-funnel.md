@@ -76,8 +76,8 @@ That reply is the whole contract, and it contains:
 
 1. The single link to the Developer Guidelines that they will be assessed
    against.
-1. A one-click link that opens their profile file already filled in, so no
-   local git, fork, or branch is needed.
+1. A link that creates their fork, and a link that opens their profile file in
+   it already filled in, so nothing has to be done in local git.
 1. The exact pull request title to use, and the exact body line that links the
    pull request back to the application.
 1. Their public application URL with a prefilled share text.

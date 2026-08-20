@@ -1,5 +1,6 @@
 <!-- markdownlint-disable MD041 MD057 -->
-<!-- This is a template. ${profile_link} is substituted by the workflow. -->
+<!-- This is a template. The dollar-brace placeholders below are
+     substituted by the workflow. -->
 
 **@${candidate}, your application for ${position} is live:**
 <https://github.com/holdex/trial/issues/${issue_number}>
@@ -28,15 +29,16 @@ and how you handle a repository tells us more than a CV does.
 
 ### Open your profile pull request
 
-Read all five steps before you start.
-If you do not work in git day to day,
-the editor forks the repository for you when you save,
-so this can be done from the browser.
+Read all six steps before you start.
+You do not need git on your machine.
+Everything below happens in the browser.
 
 1. Read the [Developer Guidelines](https://github.com/holdex/developers).
    Not following them is the most common reason a contribution is rejected.
-1. Open [your profile file](${profile_link}), which is already filled in,
-   and replace `Your Name` with yours:
+1. [Fork this repository](${fork_link}), keeping the name `${repo}`.
+   You cannot write to ours, so your file goes to your copy first.
+1. Open [your profile file](${profile_link}) in that fork.
+   It is already filled in, so replace `Your Name` with yours:
 
    ```json
    {
@@ -58,10 +60,12 @@ so this can be done from the browser.
    Closes #${issue_number}
    ```
 
-1. Open the pull request.
+1. Commit the file with
+   `Create a new branch for this commit and start a pull request`,
+   then open the pull request against `holdex/trial`.
 
 > [!IMPORTANT]
-> That last line is what links your pull request to this application.
+> The `Closes` line is what links your pull request to this application.
 > Without it, this issue will not reopen with your trial goal.
 
 ### What happens next
