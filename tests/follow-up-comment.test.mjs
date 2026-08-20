@@ -11,15 +11,12 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
-import {
-  FIELDS,
-  ISSUE_LINK_PATTERN,
-  LINK_PATTERN,
-  TITLE_PATTERN,
-} from "../scripts/profile-rules.mjs";
 
 const require = createRequire(import.meta.url);
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const { FIELDS, ISSUE_LINK_PATTERN, LINK_PATTERN, TITLE_PATTERN } = require(
+  join(root, "scripts/profile-rules.js"),
+);
 const { renderFollowUp, forkLink, profileLink, field } = require(
   join(root, ".github/workflows/job-application-comment.js"),
 );

@@ -16,6 +16,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const reopen = require(join(root, ".github/workflows/job-application-reopen.js"));
 const { linkedIssueNumbers } = reopen;
 const { renderHandover } = require(join(root, ".github/workflows/render.js"));
+const { CLOSING_KEYWORDS, LINK_PATTERN } = require(join(root, "scripts/profile-rules.js"));
 
 const linked = (body) => linkedIssueNumbers(body, "holdex", "trial");
 
@@ -23,14 +24,19 @@ test("a closing keyword links the issue it names", () => {
   assert.deepEqual(linked("- Closes #1223"), [1223]);
   assert.deepEqual(linked("Resolves: #7"), [7]);
   assert.deepEqual(linked("CLOSES #9"), [9]);
+  assert.deepEqual(linked("Fixes #42"), [42]);
 });
 
-// GitHub closes an issue on `Fixes #1`, and so does the validator's own
-// LINK_PATTERN, but this parser reads only `closes` and `resolves`. A profile
-// merged by hand rather than by the checks therefore hands over nothing. Pinned
-// as it behaves today rather than as it should, so changing it is deliberate.
-test("`fixes` closes the issue on GitHub but is invisible here", () => {
-  assert.deepEqual(linked("Fixes #42"), []);
+// A profile that merges on one keyword and hands over on another leaves the
+// candidate with a closed application and no trial goal, which is what happened
+// while this parser read `closes` and `resolves` and the validator also took
+// `fixes`. Both now read the same list.
+test("every keyword the validator accepts is one this parser reads", () => {
+  for (const keyword of CLOSING_KEYWORDS) {
+    const body = `${keyword} #1223`;
+    assert.ok(LINK_PATTERN.test(body), `the validator does not accept ${keyword}`);
+    assert.deepEqual(linked(body), [1223], `${keyword} hands over nothing`);
+  }
 });
 
 test("the full URL form links the same issue", () => {

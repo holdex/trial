@@ -17,13 +17,9 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import render from "../.github/workflows/render.js";
-import {
-  FIELDS,
-  HANDLE_PATTERN,
-  ISSUE_LINK_PATTERN,
-  LINK_PATTERN,
-  TITLE_PATTERN,
-} from "./profile-rules.mjs";
+import rules from "./profile-rules.js";
+
+const { FIELDS, HANDLE_PATTERN, ISSUE_LINK_PATTERN, LINK_PATTERN, TITLE_PATTERN } = rules;
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
