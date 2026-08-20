@@ -16,6 +16,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import render from "../.github/workflows/render.js";
 import {
   FIELDS,
   HANDLE_PATTERN,
@@ -265,7 +266,7 @@ async function handOver(issue_number, candidate) {
   }
   const commented = await api(`/repos/${REPO}/issues/${issue_number}/comments`, {
     method: "POST",
-    body: JSON.stringify({ body: template.replaceAll("${user}", candidate) }),
+    body: JSON.stringify({ body: render.renderHandover(template, candidate) }),
   });
   if (!commented.ok) {
     throw new Error(`Handover comment failed: ${commented.status}`);

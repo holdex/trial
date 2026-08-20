@@ -10,6 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const { positionLabelMap } = require('./positions.js');
+const { fill } = require('./render.js');
 
 const field = (body, label) =>
   body.match(new RegExp(`###\\s*${label}\\s*\\n+([^\\n]+)`))?.[1].trim() || null;
@@ -46,13 +47,14 @@ const forkLink = ({ owner, repo }) => `https://github.com/${owner}/${repo}/fork`
  * from the API call so a test can read the exact text we would post.
  */
 function renderFollowUp(template, { repo, candidate, position, issueNumber }) {
-  return template
-    .replaceAll('${candidate}', candidate)
-    .replaceAll('${position}', position || 'a role at Holdex')
-    .replaceAll('${repo}', repo.repo)
-    .replaceAll('${fork_link}', forkLink(repo))
-    .replaceAll('${profile_link}', profileLink(repo, candidate, issueNumber))
-    .replaceAll('${issue_number}', issueNumber);
+  return fill(template, {
+    candidate,
+    position: position || 'a role at Holdex',
+    repo: repo.repo,
+    fork_link: forkLink(repo),
+    profile_link: profileLink(repo, candidate, issueNumber),
+    issue_number: issueNumber,
+  });
 }
 
 module.exports = async ({ github, context, core }) => {

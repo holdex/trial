@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { renderHandover } = require('./render.js');
 
 /**
  * Issue numbers a pull request description actually claims to close.
@@ -69,7 +70,7 @@ module.exports = async ({ github, context, core }) => {
         await github.rest.issues.createComment({
           ...context.repo,
           issue_number,
-          body: template.replaceAll('${user}', issue.user.login),
+          body: renderHandover(template, issue.user.login),
         });
       } catch (error) {
         console.log(`Could not reopen issue #${issue_number}: ${error.message}`);

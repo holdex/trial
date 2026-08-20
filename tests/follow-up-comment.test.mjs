@@ -120,6 +120,18 @@ test("the position from the issue form reaches the comment", () => {
   assert.match(render({ position: field(issueBody, "Application Position") }), /for Python Engineer is live/);
 });
 
+// The position is read out of an issue body the candidate wrote, so it reaches
+// the renderer as text of their choosing.
+test("a value that looks like a placeholder stays text", () => {
+  const body = render({ position: "${profile_link}" });
+  assert.match(body, /your application for \$\{profile_link\} is live/);
+  assert.equal(body.match(/\$\{profile_link\}/g).length, 1, "the value was expanded a second time");
+});
+
+test("a value holding a replacement pattern stays text", () => {
+  assert.match(render({ position: "$& $` $'" }), /your application for \$& \$` \$' is live/);
+});
+
 test("the profile link is built from the candidate, not the repository owner", () => {
   const url = new URL(profileLink(REPO, "someone-else", 7));
   assert.equal(url.pathname, "/someone-else/trial/new/main");

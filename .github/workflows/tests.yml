@@ -24,6 +24,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # The tests below come from the pull request. Leaving the token in
+          # .git/config would hand it to them.
+          persist-credentials: false
 
       - name: Set up Node
         uses: actions/setup-node@v4

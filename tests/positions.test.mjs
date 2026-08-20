@@ -38,8 +38,9 @@ test("no two positions share a label", () => {
   assert.equal(new Set(labels).size, labels.length);
 });
 
-test("a label leads back to the position it came from", () => {
-  for (const [position, label] of Object.entries(positionLabelMap)) {
-    assert.equal(labelToPosition[label], position);
-  }
+test("a label leads back to the position it came from, and nowhere else", () => {
+  assert.deepEqual(
+    labelToPosition,
+    Object.fromEntries(Object.entries(positionLabelMap).map(([position, label]) => [label, position])),
+  );
 });
