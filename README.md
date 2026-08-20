@@ -11,12 +11,12 @@ and the best candidates rise to the top.
 | Role | Applicants |  |
 | ---- | ---------- | --- |
 | UX/UI Designer | 346 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Full-Stack Engineer | 147 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Senior Smart Contract Developer | 41 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Full-Stack Engineer | 146 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Senior Smart Contract Developer | 40 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Data Scientist | 21 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | UX/UI Engineer | 20 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| GoLang Engineer | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| GoLang Engineer | 16 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Actuarial Advisor | 14 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Developer Relations (DevRel) | 11 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -127,16 +127,16 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: GoLang Engineer: Derrick Luo](https://github.com/holdex/trial/issues/1187) | 0 👍 |
-| 2 | [HR: GoLang Engineer: Muhammad Agung Ferdiansyah](https://github.com/holdex/trial/issues/976) | 0 👍 |
-| 3 | [HR: GoLang Engineer: Bryan Hirawan](https://github.com/holdex/trial/issues/965) | 0 👍 |
-| 4 | [HR: GoLang Engineer: Jason karel](https://github.com/holdex/trial/issues/907) | 0 👍 |
-| 5 | [HR: GoLang Engineer: Cayden Ngai](https://github.com/holdex/trial/issues/904) | 0 👍 |
-| 6 | [HR: GoLang Engineer: Wang Hao](https://github.com/holdex/trial/issues/900) | 0 👍 |
-| 7 | [HR: GoLang Engineer: Quang Mai](https://github.com/holdex/trial/issues/844) | 0 👍 |
-| 8 | [HR: GoLang Engineer: Rabindar Kumar](https://github.com/holdex/trial/issues/819) | 0 👍 |
-| 9 | [HR: GoLang Engineer: Brillianta Bintang Virgantara](https://github.com/holdex/trial/issues/796) | 0 👍 |
-| 10 | [HR: GoLang Engineer: Muhammad Chandra Zulfikar](https://github.com/holdex/trial/issues/790) | 0 👍 |
+| 1 | [HR: GoLang Engineer: Arif Rahman](https://github.com/holdex/trial/issues/1219) | 0 👍 |
+| 2 | [HR: GoLang Engineer: Derrick Luo](https://github.com/holdex/trial/issues/1187) | 0 👍 |
+| 3 | [HR: GoLang Engineer: Muhammad Agung Ferdiansyah](https://github.com/holdex/trial/issues/976) | 0 👍 |
+| 4 | [HR: GoLang Engineer: Bryan Hirawan](https://github.com/holdex/trial/issues/965) | 0 👍 |
+| 5 | [HR: GoLang Engineer: Jason karel](https://github.com/holdex/trial/issues/907) | 0 👍 |
+| 6 | [HR: GoLang Engineer: Cayden Ngai](https://github.com/holdex/trial/issues/904) | 0 👍 |
+| 7 | [HR: GoLang Engineer: Wang Hao](https://github.com/holdex/trial/issues/900) | 0 👍 |
+| 8 | [HR: GoLang Engineer: Quang Mai](https://github.com/holdex/trial/issues/844) | 0 👍 |
+| 9 | [HR: GoLang Engineer: Rabindar Kumar](https://github.com/holdex/trial/issues/819) | 0 👍 |
+| 10 | [HR: GoLang Engineer: Brillianta Bintang Virgantara](https://github.com/holdex/trial/issues/796) | 0 👍 |
 
 ### Marketing Maestro (Head of Marketing)
 
