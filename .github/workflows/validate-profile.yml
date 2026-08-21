@@ -12,10 +12,13 @@ on:
       # answers them rather than leaving them waiting on nothing.
       - "profile-submission.json"
 
+# issues: write, because the script does not stop at merging. It reopens the
+# candidate's application and posts their trial goal there, which a read token
+# cannot do: the merge goes through and the candidate is handed nothing.
 permissions:
   contents: write
   pull-requests: write
-  issues: read
+  issues: write
 
 jobs:
   validate:
