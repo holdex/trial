@@ -13,16 +13,19 @@
 //   GITHUB_TOKEN=$(gh auth token) PR_NUMBER=1140 \
 //     node scripts/validate-profile.mjs --dry-run
 
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+import render from "../.github/workflows/render.js";
+import rules from "./profile-rules.js";
+
+const { FIELDS, HANDLE_PATTERN, ISSUE_LINK_PATTERN, LINK_PATTERN, TITLE_PATTERN } = rules;
+
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY || "holdex/trial";
 const PR_NUMBER = process.env.PR_NUMBER;
 const MARKER = "<!-- profile-check -->";
-const TITLE_PATTERN = /^chore\(profile\): /;
-const LINK_PATTERN = /(?:closes|resolves|fixes):?\s*(?:#(\d+)|https:\/\/github\.com\/holdex\/trial\/issues\/(\d+))/i;
-const HANDLE_PATTERN = /^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$/;
-const ISSUE_LINK_PATTERN = /^https:\/\/github\.com\/holdex\/trial\/issues\/(\d+)$/;
-const FIELDS = ["github_handle", "full_name", "github_trial_issue_link"];
 
 if (!TOKEN || !PR_NUMBER) {
   console.error("Error: GITHUB_TOKEN and PR_NUMBER are both required.");
@@ -43,7 +46,7 @@ async function api(path, init = {}) {
 
 /** A failed check, phrased as the change the candidate has to make. */
 const fail = (fix) => ({ ok: false, fix });
-const pass = { ok: true };
+const pass = (application) => ({ ok: true, application });
 
 /**
  * Everything the instructions asked for, in the order a candidate would hit
@@ -150,7 +153,7 @@ async function check(pull, files) {
     return fail(`#${linked[1]} was opened by \`${application.user.login}\`. Link your own application.`);
   }
 
-  return pass;
+  return pass(Number(linked[1]));
 }
 
 /** One comment per pull request, rewritten rather than repeated. */
@@ -228,7 +231,43 @@ async function main() {
     );
     throw new Error(`Merge failed: ${merged.status} ${JSON.stringify(merged.body)}`);
   }
+  // Say it only once it is true: claiming the application reopened before the
+  // handover has happened leaves the candidate holding a false statement when
+  // it fails.
+  await handOver(verdict.application, pull.user.login);
   await say("**Merged.** Your application reopens with your trial goal.");
+}
+
+/**
+ * Reopens the application this pull request closed and posts the trial goal.
+ *
+ * This has to happen here rather than in the pull_request:closed job, because
+ * a merge performed with GITHUB_TOKEN does not start new workflow runs. Left to
+ * that job, a submission merged by this script would close the candidate's
+ * application and hand them nothing.
+ */
+async function handOver(issue_number, candidate) {
+  const template = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), "..", ".github/workflows/job-application-merged-body.md"),
+    "utf8",
+  );
+  const reopened = await api(`/repos/${REPO}/issues/${issue_number}`, {
+    method: "PATCH",
+    body: JSON.stringify({ state: "open" }),
+  });
+  // Stop here rather than commenting a trial goal onto an application that is
+  // still closed.
+  if (!reopened.ok) {
+    throw new Error(`Could not reopen #${issue_number}: ${reopened.status}`);
+  }
+  const commented = await api(`/repos/${REPO}/issues/${issue_number}/comments`, {
+    method: "POST",
+    body: JSON.stringify({ body: render.renderHandover(template, candidate) }),
+  });
+  if (!commented.ok) {
+    throw new Error(`Handover comment failed: ${commented.status}`);
+  }
+  console.log(`Handed over the trial goal on #${issue_number}.`);
 }
 
 main().catch((error) => {

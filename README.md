@@ -10,19 +10,18 @@ and the best candidates rise to the top.
 <!-- positions-start -->
 | Role | Applicants |  |
 | ---- | ---------- | --- |
-| UX/UI Designer | 346 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Full-Stack Engineer | 147 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Senior Smart Contract Developer | 41 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Python Engineer | 23 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Data Scientist | 21 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| UX/UI Engineer | 20 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| UX/UI Designer | 343 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Full-Stack Engineer | 141 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Senior Smart Contract Developer | 37 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Python Engineer | 25 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Data Scientist | 19 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | GoLang Engineer | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| UX/UI Engineer | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Actuarial Advisor | 14 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Developer Relations (DevRel) | 11 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | DevOps Engineer | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Partner (Entrepreneur in Residence) | 6 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Other | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Executive Assistant | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 <!-- positions-end -->
 
@@ -47,7 +46,7 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Actuarial Advisor: Bowen Zhao](https://github.com/holdex/trial/issues/1189) | 0 👍 |
+| 1 | [HR: Actuarial Advisor: Chun Chak Lee](https://github.com/holdex/trial/issues/1231) | 0 👍 |
 | 2 | [HR: Actuarial Advisor: Jionghao Du](https://github.com/holdex/trial/issues/1092) | 0 👍 |
 | 3 | [HR: Actuarial Advisor: Chi Hang Wai](https://github.com/holdex/trial/issues/1066) | 0 👍 |
 | 4 | [HR: Actuarial Advisor: kouadio yao fany modeste](https://github.com/holdex/trial/issues/897) | 0 👍 |
@@ -62,16 +61,16 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Data Scientist: Zezheng Zhang](https://github.com/holdex/trial/issues/1044) | 0 👍 |
-| 2 | [HR: Data Scientist: Carlos Gonzalez Visiedo](https://github.com/holdex/trial/issues/999) | 0 👍 |
-| 3 | [HR: Data Scientist: Tsun Li Nicholas Tam](https://github.com/holdex/trial/issues/927) | 0 👍 |
-| 4 | [HR: Data Scientist: Chi Hang Chan](https://github.com/holdex/trial/issues/886) | 0 👍 |
-| 5 | [HR: Data Scientist: Chung Hei Chan](https://github.com/holdex/trial/issues/867) | 0 👍 |
-| 6 | [HR: Data Scientist: Junwen Luo](https://github.com/holdex/trial/issues/860) | 0 👍 |
-| 7 | [HR: Data Scientist: Shreyank Saparia](https://github.com/holdex/trial/issues/855) | 0 👍 |
-| 8 | [HR: Data Scientist: Kanav Mehta](https://github.com/holdex/trial/issues/840) | 0 👍 |
-| 9 | [HR: Data Scientist: Jiayin Lei](https://github.com/holdex/trial/issues/836) | 0 👍 |
-| 10 | [HR: Data Scientist: Chung Wang Wong](https://github.com/holdex/trial/issues/785) | 0 👍 |
+| 1 | [HR: Data Scientist: Carlos Gonzalez Visiedo](https://github.com/holdex/trial/issues/999) | 0 👍 |
+| 2 | [HR: Data Scientist: Tsun Li Nicholas Tam](https://github.com/holdex/trial/issues/927) | 0 👍 |
+| 3 | [HR: Data Scientist: Chi Hang Chan](https://github.com/holdex/trial/issues/886) | 0 👍 |
+| 4 | [HR: Data Scientist: Chung Hei Chan](https://github.com/holdex/trial/issues/867) | 0 👍 |
+| 5 | [HR: Data Scientist: Junwen Luo](https://github.com/holdex/trial/issues/860) | 0 👍 |
+| 6 | [HR: Data Scientist: Shreyank Saparia](https://github.com/holdex/trial/issues/855) | 0 👍 |
+| 7 | [HR: Data Scientist: Kanav Mehta](https://github.com/holdex/trial/issues/840) | 0 👍 |
+| 8 | [HR: Data Scientist: Jiayin Lei](https://github.com/holdex/trial/issues/836) | 0 👍 |
+| 9 | [HR: Data Scientist: Chung Wang Wong](https://github.com/holdex/trial/issues/785) | 0 👍 |
+| 10 | [HR: Data Scientist: Frank Zhang](https://github.com/holdex/trial/issues/731) | 0 👍 |
 
 ### Developer Relations (DevRel)
 
@@ -112,22 +111,22 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Full-Stack Engineer: Balaban Dumitru](https://github.com/holdex/trial/issues/1181) | 0 👍 |
-| 2 | [HR: Full-Stack Engineer: Achal Singh](https://github.com/holdex/trial/issues/1160) | 0 👍 |
-| 3 | [HR: Full-Stack Engineer: Irvan Trinanda](https://github.com/holdex/trial/issues/1158) | 0 👍 |
-| 4 | [HR: Full-Stack Engineer: Leon Cosby](https://github.com/holdex/trial/issues/1147) | 0 👍 |
-| 5 | [HR: Full-Stack Engineer: Ardiant Utomo](https://github.com/holdex/trial/issues/1139) | 0 👍 |
-| 6 | [HR: Full-Stack Engineer: Muhammed Anas](https://github.com/holdex/trial/issues/1135) | 0 👍 |
-| 7 | [HR: Full-Stack Engineer: Jean-Baptiste Aloncle](https://github.com/holdex/trial/issues/1128) | 0 👍 |
-| 8 | [HR: Full-Stack Engineer: Ansh Mehta](https://github.com/holdex/trial/issues/1124) | 0 👍 |
-| 9 | [HR: Full-Stack Engineer: TImothy Nwokeji](https://github.com/holdex/trial/issues/1117) | 0 👍 |
-| 10 | [HR: Full-Stack Engineer: Arko Roy](https://github.com/holdex/trial/issues/1114) | 0 👍 |
+| 1 | [HR: Full-Stack Engineer: Achal Singh](https://github.com/holdex/trial/issues/1160) | 0 👍 |
+| 2 | [HR: Full-Stack Engineer: Irvan Trinanda](https://github.com/holdex/trial/issues/1158) | 0 👍 |
+| 3 | [HR: Full-Stack Engineer: Leon Cosby](https://github.com/holdex/trial/issues/1147) | 0 👍 |
+| 4 | [HR: Full-Stack Engineer: Ardiant Utomo](https://github.com/holdex/trial/issues/1139) | 0 👍 |
+| 5 | [HR: Full-Stack Engineer: Muhammed Anas](https://github.com/holdex/trial/issues/1135) | 0 👍 |
+| 6 | [HR: Full-Stack Engineer: Jean-Baptiste Aloncle](https://github.com/holdex/trial/issues/1128) | 0 👍 |
+| 7 | [HR: Full-Stack Engineer: Ansh Mehta](https://github.com/holdex/trial/issues/1124) | 0 👍 |
+| 8 | [HR: Full-Stack Engineer: TImothy Nwokeji](https://github.com/holdex/trial/issues/1117) | 0 👍 |
+| 9 | [HR: Full-Stack Engineer: Arko Roy](https://github.com/holdex/trial/issues/1114) | 0 👍 |
+| 10 | [HR: Full-Stack Engineer: Raj Lathigra](https://github.com/holdex/trial/issues/1111) | 0 👍 |
 
 ### GoLang Engineer
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: GoLang Engineer: Derrick Luo](https://github.com/holdex/trial/issues/1187) | 0 👍 |
+| 1 | [HR: GoLang Engineer: Arif Rahman](https://github.com/holdex/trial/issues/1219) | 0 👍 |
 | 2 | [HR: GoLang Engineer: Muhammad Agung Ferdiansyah](https://github.com/holdex/trial/issues/976) | 0 👍 |
 | 3 | [HR: GoLang Engineer: Bryan Hirawan](https://github.com/holdex/trial/issues/965) | 0 👍 |
 | 4 | [HR: GoLang Engineer: Jason karel](https://github.com/holdex/trial/issues/907) | 0 👍 |
@@ -153,12 +152,6 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 | 9 | [HR: Marketing Maestro (Head of Marketing): Andy Makkaraseng](https://github.com/holdex/trial/issues/1076) | 0 👍 |
 | 10 | [HR: Marketing Maestro (Head of Marketing): Nofero Nofero](https://github.com/holdex/trial/issues/1075) | 0 👍 |
 
-### Other
-
-| # | Candidate | Reactions |
-|---|-----------|-----------|
-| 1 | [HR: Other: Gerard Möller](https://github.com/holdex/trial/issues/1185) | 0 👍 |
-
 ### Partner (Entrepreneur in Residence)
 
 | # | Candidate | Reactions |
@@ -174,61 +167,61 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Python Engineer: Carson Reik](https://github.com/holdex/trial/issues/1161) | 0 👍 |
-| 2 | [HR: Python Engineer: Jonatas Silva](https://github.com/holdex/trial/issues/1159) | 0 👍 |
-| 3 | [HR: Python Engineer: Kevin Mak](https://github.com/holdex/trial/issues/1011) | 0 👍 |
-| 4 | [HR: Python Engineer: Jingwei Li](https://github.com/holdex/trial/issues/1009) | 0 👍 |
-| 5 | [HR: Python Engineer: Intiser Rahman](https://github.com/holdex/trial/issues/997) | 0 👍 |
-| 6 | [HR: Python Engineer: Hubert Caine](https://github.com/holdex/trial/issues/992) | 0 👍 |
-| 7 | [HR: Python Engineer: Agung Setiawan](https://github.com/holdex/trial/issues/922) | 0 👍 |
-| 8 | [HR: Python Engineer: Nisan Harmanci](https://github.com/holdex/trial/issues/895) | 0 👍 |
-| 9 | [HR: Python Engineer: Noel Mathews](https://github.com/holdex/trial/issues/894) | 0 👍 |
-| 10 | [HR: Python Engineer: Raymond Yeung](https://github.com/holdex/trial/issues/842) | 0 👍 |
+| 1 | [HR: Python Engineer: Vincenzo Di Perna](https://github.com/holdex/trial/issues/1235) | 0 👍 |
+| 2 | [HR: Python Engineer: Enrico Jr Tuvera](https://github.com/holdex/trial/issues/1223) | 0 👍 |
+| 3 | [HR: Python Engineer: Carson Reik](https://github.com/holdex/trial/issues/1161) | 0 👍 |
+| 4 | [HR: Python Engineer: Jonatas Silva](https://github.com/holdex/trial/issues/1159) | 0 👍 |
+| 5 | [HR: Python Engineer: Kevin Mak](https://github.com/holdex/trial/issues/1011) | 0 👍 |
+| 6 | [HR: Python Engineer: Jingwei Li](https://github.com/holdex/trial/issues/1009) | 0 👍 |
+| 7 | [HR: Python Engineer: Intiser Rahman](https://github.com/holdex/trial/issues/997) | 0 👍 |
+| 8 | [HR: Python Engineer: Hubert Caine](https://github.com/holdex/trial/issues/992) | 0 👍 |
+| 9 | [HR: Python Engineer: Agung Setiawan](https://github.com/holdex/trial/issues/922) | 0 👍 |
+| 10 | [HR: Python Engineer: Nisan Harmanci](https://github.com/holdex/trial/issues/895) | 0 👍 |
 
 ### Senior Smart Contract Developer
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Senior Smart Contract Developer: phi yang](https://github.com/holdex/trial/issues/1202) | 0 👍 |
+| 1 | [HR: Senior Smart Contract Developer: Trixie Thye](https://github.com/holdex/trial/issues/1234) | 0 👍 |
 | 2 | [HR: Senior Smart Contract Developer: Carlo Sevilla](https://github.com/holdex/trial/issues/1186) | 0 👍 |
 | 3 | [HR: Senior Smart Contract Developer: Ming Cheng](https://github.com/holdex/trial/issues/1156) | 0 👍 |
 | 4 | [HR: Senior Smart Contract Developer: Mujeeb Sulayman](https://github.com/holdex/trial/issues/1136) | 0 👍 |
 | 5 | [HR: Senior Smart Contract Developer: Sumit Kumar](https://github.com/holdex/trial/issues/1134) | 0 👍 |
-| 6 | [HR: Senior Smart Contract Developer: Jakub Pawlik](https://github.com/holdex/trial/issues/1121) | 0 👍 |
-| 7 | [HR: Senior Smart Contract Developer: Aleksandr Ivannikov](https://github.com/holdex/trial/issues/1106) | 0 👍 |
-| 8 | [HR: Senior Smart Contract Developer: Pablo Urriza](https://github.com/holdex/trial/issues/863) | 0 👍 |
-| 9 | [HR: Senior Smart Contract Developer: Sam Yung](https://github.com/holdex/trial/issues/798) | 0 👍 |
-| 10 | [HR: Senior Smart Contract Developer: Thomas Febrianto](https://github.com/holdex/trial/issues/793) | 0 👍 |
+| 6 | [HR: Senior Smart Contract Developer: Aleksandr Ivannikov](https://github.com/holdex/trial/issues/1106) | 0 👍 |
+| 7 | [HR: Senior Smart Contract Developer: Pablo Urriza](https://github.com/holdex/trial/issues/863) | 0 👍 |
+| 8 | [HR: Senior Smart Contract Developer: Sam Yung](https://github.com/holdex/trial/issues/798) | 0 👍 |
+| 9 | [HR: Senior Smart Contract Developer: Thomas Febrianto](https://github.com/holdex/trial/issues/793) | 0 👍 |
+| 10 | [HR: Senior Smart Contract Developer: Bhargav K](https://github.com/holdex/trial/issues/778) | 0 👍 |
 
 ### UX/UI Designer
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: UX/UI Designer: Chiu Lok Yan](https://github.com/holdex/trial/issues/1188) | 0 👍 |
-| 2 | [HR: UX/UI Designer: Majid Mohebbi](https://github.com/holdex/trial/issues/1184) | 0 👍 |
-| 3 | [HR: UX/UI Designer: Octavian Munteanu](https://github.com/holdex/trial/issues/1182) | 0 👍 |
-| 4 | [HR: UX/UI Designer: Bruno Neves](https://github.com/holdex/trial/issues/1180) | 0 👍 |
-| 5 | [HR: UX/UI Designer: Adrian Oduma](https://github.com/holdex/trial/issues/1165) | 0 👍 |
-| 6 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1162) | 0 👍 |
-| 7 | [HR: UX/UI Designer: Brendan Ma](https://github.com/holdex/trial/issues/1137) | 0 👍 |
-| 8 | [HR: UX/UI Designer: Darren Minihane](https://github.com/holdex/trial/issues/1127) | 0 👍 |
-| 9 | [HR: UX/UI Designer: Jamie Wong](https://github.com/holdex/trial/issues/1125) | 0 👍 |
-| 10 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1123) | 0 👍 |
+| 1 | [HR: UX/UI Designer: Chen Ruiyue](https://github.com/holdex/trial/issues/1230) | 0 👍 |
+| 2 | [HR: UX/UI Designer: Bruno Neves](https://github.com/holdex/trial/issues/1180) | 0 👍 |
+| 3 | [HR: UX/UI Designer: Adrian Oduma](https://github.com/holdex/trial/issues/1165) | 0 👍 |
+| 4 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1162) | 0 👍 |
+| 5 | [HR: UX/UI Designer: Brendan Ma](https://github.com/holdex/trial/issues/1137) | 0 👍 |
+| 6 | [HR: UX/UI Designer: Darren Minihane](https://github.com/holdex/trial/issues/1127) | 0 👍 |
+| 7 | [HR: UX/UI Designer: Jamie Wong](https://github.com/holdex/trial/issues/1125) | 0 👍 |
+| 8 | [HR: UX/UI Designer: Samuel Elliot](https://github.com/holdex/trial/issues/1123) | 0 👍 |
+| 9 | [HR: UX/UI Designer: Laura Kim](https://github.com/holdex/trial/issues/1093) | 0 👍 |
+| 10 | [HR: UX/UI Designer: Obinna Arua](https://github.com/holdex/trial/issues/1080) | 0 👍 |
 
 ### UX/UI Engineer
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: UX/UI Engineer: Man Huen Tsoi](https://github.com/holdex/trial/issues/1191) | 0 👍 |
-| 2 | [HR: UX/UI Engineer: Theodore Widjaja](https://github.com/holdex/trial/issues/1090) | 0 👍 |
-| 3 | [HR: UX/UI Engineer: Jason Tse](https://github.com/holdex/trial/issues/884) | 0 👍 |
-| 4 | [HR: UX/UI Engineer: Joanna Moura](https://github.com/holdex/trial/issues/868) | 0 👍 |
-| 5 | [HR: UX/UI Engineer: Nixon Nova](https://github.com/holdex/trial/issues/742) | 0 👍 |
-| 6 | [HR: UX/UI Engineer: Windy Miftah](https://github.com/holdex/trial/issues/687) | 0 👍 |
-| 7 | [HR: UX/UI Engineer: Tsz Kin Ng](https://github.com/holdex/trial/issues/673) | 0 👍 |
-| 8 | [HR: UX/UI Engineer: Tazim Sikder](https://github.com/holdex/trial/issues/623) | 0 👍 |
-| 9 | [HR: UX/UI Engineer: Pankaj Maurya](https://github.com/holdex/trial/issues/570) | 0 👍 |
-| 10 | [HR: UX/UI Engineer: Ashadul Islam Samiul](https://github.com/holdex/trial/issues/548) | 0 👍 |
+| 1 | [HR: UX/UI Engineer: Jason Tse](https://github.com/holdex/trial/issues/884) | 0 👍 |
+| 2 | [HR: UX/UI Engineer: Joanna Moura](https://github.com/holdex/trial/issues/868) | 0 👍 |
+| 3 | [HR: UX/UI Engineer: Nixon Nova](https://github.com/holdex/trial/issues/742) | 0 👍 |
+| 4 | [HR: UX/UI Engineer: Windy Miftah](https://github.com/holdex/trial/issues/687) | 0 👍 |
+| 5 | [HR: UX/UI Engineer: Tsz Kin Ng](https://github.com/holdex/trial/issues/673) | 0 👍 |
+| 6 | [HR: UX/UI Engineer: Tazim Sikder](https://github.com/holdex/trial/issues/623) | 0 👍 |
+| 7 | [HR: UX/UI Engineer: Pankaj Maurya](https://github.com/holdex/trial/issues/570) | 0 👍 |
+| 8 | [HR: UX/UI Engineer: Ashadul Islam Samiul](https://github.com/holdex/trial/issues/548) | 0 👍 |
+| 9 | [HR: UX/UI Engineer: Aldiansyah Putra](https://github.com/holdex/trial/issues/395) | 0 👍 |
+| 10 | [HR: UX/UI Engineer: Goran Radmanovic](https://github.com/holdex/trial/issues/275) | 0 👍 |
 <!-- leaderboard-end -->
 
 ## How to Contribute

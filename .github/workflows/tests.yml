@@ -1,0 +1,43 @@
+# The automation in this repository answers candidates without a person in the
+# loop, so a mistake here is only ever found by the candidate it lands on.
+# These tests run on any pull request that touches it.
+#
+# A profile submission touches none of these paths, so nothing here runs for a
+# candidate.
+
+name: Tests
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+      - ".github/ISSUE_TEMPLATE/**"
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # The tests below come from the pull request. Leaving the token in
+          # .git/config would hand it to them.
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check every script parses
+        run: |
+          find .github/workflows scripts tests \( -name '*.js' -o -name '*.mjs' \) \
+            -print0 | xargs -0 -n1 node --check
+
+      - name: Run the tests
+        run: node --test tests/

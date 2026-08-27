@@ -10,14 +10,17 @@
 const fs = require('fs');
 const path = require('path');
 const { positionLabelMap } = require('./positions.js');
+const { fill } = require('./render.js');
 
 const field = (body, label) =>
   body.match(new RegExp(`###\\s*${label}\\s*\\n+([^\\n]+)`))?.[1].trim() || null;
 
 /**
- * GitHub opens a new-file editor with this content already typed in, forks the
- * repository on save, and offers the pull request. The candidate never touches
- * git, which matters when most applicants are designers.
+ * GitHub opens a new-file editor with this content already typed in, so the
+ * candidate never touches git, which matters when most applicants are
+ * designers. The editor is addressed on the candidate's own fork: the same URL
+ * on this repository only offers a fork button, and that button answers 422
+ * because the prefilled query string travels with it.
  */
 function profileLink({ owner, repo }, candidate, issueNumber) {
   const template = JSON.stringify(
@@ -30,10 +33,28 @@ function profileLink({ owner, repo }, candidate, issueNumber) {
     2
   );
   return (
-    `https://github.com/${owner}/${repo}/new/main` +
+    `https://github.com/${candidate}/${repo}/new/main` +
     `?filename=${encodeURIComponent(`profiles/${candidate}.json`)}` +
     `&value=${encodeURIComponent(template)}`
   );
+}
+
+/** The fork has to exist before the editor link above resolves. */
+const forkLink = ({ owner, repo }) => `https://github.com/${owner}/${repo}/fork`;
+
+/**
+ * The reply a candidate gets, with every placeholder filled in. Kept separate
+ * from the API call so a test can read the exact text we would post.
+ */
+function renderFollowUp(template, { repo, candidate, position, issueNumber }) {
+  return fill(template, {
+    candidate,
+    position: position || 'a role at Holdex',
+    repo: repo.repo,
+    fork_link: forkLink(repo),
+    profile_link: profileLink(repo, candidate, issueNumber),
+    issue_number: issueNumber,
+  });
 }
 
 module.exports = async ({ github, context, core }) => {
@@ -50,11 +71,12 @@ module.exports = async ({ github, context, core }) => {
     await github.rest.issues.createComment({
       ...context.repo,
       issue_number: issue.number,
-      body: template
-        .replaceAll('${candidate}', candidate)
-        .replaceAll('${position}', position || 'a role at Holdex')
-        .replaceAll('${profile_link}', profileLink(context.repo, candidate, issue.number))
-        .replaceAll('${issue_number}', issue.number),
+      body: renderFollowUp(template, {
+        repo: context.repo,
+        candidate,
+        position,
+        issueNumber: issue.number,
+      }),
     });
 
     const labels = ['job-application'];
@@ -85,3 +107,8 @@ module.exports = async ({ github, context, core }) => {
     core.setFailed(error.message);
   }
 };
+
+module.exports.field = field;
+module.exports.forkLink = forkLink;
+module.exports.profileLink = profileLink;
+module.exports.renderFollowUp = renderFollowUp;
