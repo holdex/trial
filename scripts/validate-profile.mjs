@@ -23,7 +23,11 @@ const { FIELDS, HANDLE_PATTERN, ISSUE_LINK_PATTERN, LINK_PATTERN, TITLE_PATTERN 
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TOKEN = process.env.GITHUB_TOKEN;
-const REPO = process.env.GITHUB_REPOSITORY || "holdex/trial";
+// Always holdex/trial: candidates sometimes open the pull request against
+// their own fork instead of upstream, and in that case GITHUB_REPOSITORY
+// resolves to the fork, not holdex/trial. The check has to run against the
+// repo where the trial issues and profiles actually live either way.
+const REPO = "holdex/trial";
 const PR_NUMBER = process.env.PR_NUMBER;
 const MARKER = "<!-- profile-check -->";
 
