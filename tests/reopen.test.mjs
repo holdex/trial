@@ -111,6 +111,7 @@ test("the merged pull request greets the author of the application it closed", a
 // `profiles/`, even though this is a genuine profile submission.
 test("a profile pull request with an empty diff still reopens the application", async () => {
   const posted = [];
+  const updated = [];
   const issue = {
     number: 1223,
     labels: [{ name: "job-application" }],
@@ -122,7 +123,7 @@ test("a profile pull request with an empty diff still reopens the application", 
       pulls: { listFiles: "listFiles" },
       issues: {
         get: async () => ({ data: issue }),
-        update: async () => ({}),
+        update: async (args) => updated.push(args),
         createComment: async (args) => posted.push(args),
       },
     },
@@ -142,6 +143,9 @@ test("a profile pull request with an empty diff still reopens the application", 
   process.env.GITHUB_WORKSPACE = root;
   await reopen({ github, context, core: { setFailed: (m) => assert.fail(m) } });
 
+  assert.equal(updated.length, 1);
+  assert.equal(updated[0].issue_number, 1223);
+  assert.equal(updated[0].state, "open");
   assert.equal(posted.length, 1);
   assert.equal(posted[0].issue_number, 1223);
 });
