@@ -11,7 +11,7 @@ and the best candidates rise to the top.
 | Role | Applicants |  |
 | ---- | ---------- | --- |
 | UX/UI Designer | 338 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Full-Stack Engineer | 139 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Full-Stack Engineer | 140 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Senior Smart Contract Developer | 37 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 26 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Data Scientist | 19 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -111,16 +111,16 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 
 | # | Candidate | Reactions |
 |---|-----------|-----------|
-| 1 | [HR: Full-Stack Engineer: Achal Singh](https://github.com/holdex/trial/issues/1160) | 0 👍 |
-| 2 | [HR: Full-Stack Engineer: Irvan Trinanda](https://github.com/holdex/trial/issues/1158) | 0 👍 |
-| 3 | [HR: Full-Stack Engineer: Leon Cosby](https://github.com/holdex/trial/issues/1147) | 0 👍 |
-| 4 | [HR: Full-Stack Engineer: Ardiant Utomo](https://github.com/holdex/trial/issues/1139) | 0 👍 |
-| 5 | [HR: Full-Stack Engineer: Muhammed Anas](https://github.com/holdex/trial/issues/1135) | 0 👍 |
-| 6 | [HR: Full-Stack Engineer: Jean-Baptiste Aloncle](https://github.com/holdex/trial/issues/1128) | 0 👍 |
-| 7 | [HR: Full-Stack Engineer: Ansh Mehta](https://github.com/holdex/trial/issues/1124) | 0 👍 |
-| 8 | [HR: Full-Stack Engineer: TImothy Nwokeji](https://github.com/holdex/trial/issues/1117) | 0 👍 |
-| 9 | [HR: Full-Stack Engineer: Arko Roy](https://github.com/holdex/trial/issues/1114) | 0 👍 |
-| 10 | [HR: Full-Stack Engineer: Raj Lathigra](https://github.com/holdex/trial/issues/1111) | 0 👍 |
+| 1 | [HR: Full-Stack Engineer: Arjun Porwal](https://github.com/holdex/trial/issues/1246) | 0 👍 |
+| 2 | [HR: Full-Stack Engineer: Achal Singh](https://github.com/holdex/trial/issues/1160) | 0 👍 |
+| 3 | [HR: Full-Stack Engineer: Irvan Trinanda](https://github.com/holdex/trial/issues/1158) | 0 👍 |
+| 4 | [HR: Full-Stack Engineer: Leon Cosby](https://github.com/holdex/trial/issues/1147) | 0 👍 |
+| 5 | [HR: Full-Stack Engineer: Ardiant Utomo](https://github.com/holdex/trial/issues/1139) | 0 👍 |
+| 6 | [HR: Full-Stack Engineer: Muhammed Anas](https://github.com/holdex/trial/issues/1135) | 0 👍 |
+| 7 | [HR: Full-Stack Engineer: Jean-Baptiste Aloncle](https://github.com/holdex/trial/issues/1128) | 0 👍 |
+| 8 | [HR: Full-Stack Engineer: Ansh Mehta](https://github.com/holdex/trial/issues/1124) | 0 👍 |
+| 9 | [HR: Full-Stack Engineer: TImothy Nwokeji](https://github.com/holdex/trial/issues/1117) | 0 👍 |
+| 10 | [HR: Full-Stack Engineer: Arko Roy](https://github.com/holdex/trial/issues/1114) | 0 👍 |
 
 ### GoLang Engineer
 
