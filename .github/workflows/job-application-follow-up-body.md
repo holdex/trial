@@ -85,10 +85,12 @@ That is not a rejection, and you are welcome to apply again.
 ### Share your application
 
 > [!TIP]
-> Your application is now public —
-> share it with your network and ask them to react with 👍.
-> The more support you collect,
-> the higher you rank on the leaderboard and the sooner you get reviewed.
+> Your application is now public — 
+> share it with your network and ask them to react with 👍. 
+> The more support you collect, the higher you will climb to the top 
+> of the leaderboard, making your application visible to other headhunters. 
+> Please note that while this increases external visibility, it does not 
+> affect the speed or outcome of the Holdex review process.
 >
 > Your application: <https://github.com/holdex/trial/issues/${issue_number}>
 
