@@ -28,8 +28,10 @@ so read the spec rather than an old copy of it.
 1. Work there: define Problems under the Goal, and resolve them by pull
    request.
 1. When you are ready, invite [@zolotokrylin](https://github.com/zolotokrylin)
-   and [@markholdex](https://github.com/markholdex) as owners, and tell them in
-   your issue.
+   and [@markholdex](https://github.com/markholdex) as collaborators if the
+   repository is under your personal account. If you created it under an
+   organisation, add them as organisation owners instead. Tell them in your
+   issue once access is ready.
 
 Some Goals add their own environment or demo conditions.
 Those are in the spec.

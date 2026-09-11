@@ -19,10 +19,21 @@ and a framed business question that a stakeholder can decide from.
 
 ## Getting the data
 
-You work with real Holdex historical data.
-It is handed to you once you have created your repository
-and pinged the reviewers on your Goal issue,
-as described in [how the trial runs](../trial.md).
+Real Holdex historical data may be shared only after the data owner gives
+written approval for this assignment. Before sharing it, Holdex must anonymise
+and minimise the dataset, place it only in an approved private repository, and
+limit access to the candidate and named reviewers on a need-to-know basis. It
+must not be copied to public repositories, forks, or unapproved services.
+
+The approval must also state the retention period and deletion deadline. At the
+deadline, the candidate must delete the dataset and any derived row-level data
+from repositories, local devices, exports, and backups, then confirm deletion to
+the reviewers. If approval, anonymisation, private storage, access control,
+retention, or verifiable deletion cannot be provided, use synthetic data instead.
+
+The approved data or synthetic substitute is handed to you once you have
+created your repository and pinged the reviewers on your Goal issue, as
+described in [how the trial runs](../trial.md).
 
 ## Forecasting performance
 

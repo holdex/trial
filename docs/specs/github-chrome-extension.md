@@ -33,19 +33,28 @@ The extension shows all of them.
 The API does expose this: query the `issue` object and read its `projectItems`.
 
 ```graphql
-query {
+query ProjectsForIssue($after: String) {
   issue(number: ISSUE_NUMBER, repositoryNameWithOwner: "OWNER/REPO") {
-    projectItems(first: 100) {
+    projectItems(first: 100, after: $after) {
       nodes {
         project {
           id
           name
         }
       }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
     }
   }
 }
 ```
+
+Run the first query with `after: null`, aggregate its `nodes`, then pass
+`pageInfo.endCursor` as `after` for the next query. Continue aggregating every
+page until `pageInfo.hasNextPage` is false; the displayed project list must use
+the complete aggregate.
 
 Projects in other organisations appear too, when the token allows it.
 

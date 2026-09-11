@@ -26,14 +26,25 @@ and see the resulting access as a table.
 
 ## Declaring who belongs where
 
-A `members_permissions` file defines the relationship between users and teams.
-Someone has to maintain it by hand,
-so its structure is part of what is being judged.
+A `members_permissions` file defines the complete desired state for users, teams,
+repositories, team membership, and repository permissions.
+It is the source of truth: removing any of those entries revokes or deletes the
+corresponding GitHub access rather than leaving previously granted access in place.
+Someone has to maintain it by hand, so its structure is part of what is being judged.
 
 ## Applying it automatically
 
-Changing that file updates the organisation's permissions through the GitHub
-API, driven by GitHub Actions reacting to the change.
+Changing that file reconciles the organisation's permissions through the GitHub
+API, driven by GitHub Actions reacting to the change. The workflow applies
+removals as well as additions and permission updates until GitHub matches the
+declared state.
+
+## Acceptance
+
+1. Adding or changing a user, team, repository, or permission in
+   `members_permissions` produces the declared access.
+1. Removing a user, team, repository, team membership, or permission from the
+   file removes the corresponding GitHub access on the next workflow run.
 
 ## Showing the result
 

@@ -39,5 +39,10 @@ and a README that lets someone else set it up and run it.
 
 1. Both contracts deploy and verify.
 1. The bridging scripts move the token in both directions, repeatably.
+1. The round-trip test asserts token balances on both chains after each leg. For
+   the Ozean-to-Sepolia withdrawal, it submits the withdrawal, waits until it can
+   be proven, proves it, waits until it can be finalised, finalises and claims
+   it, and then verifies the Ozean balance decreased and the Sepolia balance
+   increased by the expected amounts. Submission alone is not completion.
 1. Errors and permissions are handled deliberately, not incidentally.
 1. The README is enough to reproduce all of it.

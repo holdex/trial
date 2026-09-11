@@ -17,8 +17,9 @@ in your own words, before anyone spends time on an assignment.
 
 ## Rating yourself
 
-Rate each skill below from 0 to 10,
-adding a note wherever the number alone would mislead:
+Give a separate rating from 0 to 10 for every skill listed below. Do not combine
+several skills into one rating. Add a note wherever a number alone would
+mislead:
 
 | Rating | Meaning |
 | --- | --- |
@@ -45,6 +46,35 @@ internal meetings and small external events.
 
 **Problem solving**: troubleshooting without supervision;
 adapting to shifting priorities; researching and summarising.
+
+Use this response template, replacing every `[0-10]` and adding notes where
+needed:
+
+```text
+Administrative and organisational
+- Managing complex calendars and resolving conflicts: [0-10] — [optional note]
+- Triaging an inbox and drafting correspondence: [0-10] — [optional note]
+- Juggling deadlines and knowing what is urgent: [0-10] — [optional note]
+- Organising and retrieving documents: [0-10] — [optional note]
+- Handling private information with discretion: [0-10] — [optional note]
+
+Technical
+- Microsoft Office: [0-10] — [optional note]
+- Google Workspace: [0-10] — [optional note]
+- Communication tools: [0-10] — [optional note]
+- Task tools: [0-10] — [optional note]
+- Expense and travel systems: [0-10] — [optional note]
+
+Events and logistics
+- Domestic travel: [0-10] — [optional note]
+- International travel, including visas and complex itineraries: [0-10] — [optional note]
+- Internal meetings and small external events: [0-10] — [optional note]
+
+Problem solving
+- Troubleshooting without supervision: [0-10] — [optional note]
+- Adapting to shifting priorities: [0-10] — [optional note]
+- Researching and summarising: [0-10] — [optional note]
+```
 
 ## In your own words
 
