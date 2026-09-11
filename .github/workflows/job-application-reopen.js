@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { renderHandover } = require('./render.js');
-const { CLOSING_KEYWORDS } = require('../../scripts/profile-rules.js');
+const { CLOSING_KEYWORDS, TITLE_PATTERN } = require('../../scripts/profile-rules.js');
 
 /**
  * Issue numbers a pull request description actually claims to close.
@@ -37,12 +37,18 @@ module.exports = async ({ github, context, core }) => {
 
     // Only a profile submission earns a trial goal. Without this gate every
     // merged pull request runs the rest of this job.
+    //
+    // The diff alone is not a reliable signal: a candidate whose file already
+    // held the right content (say, from an earlier attempt) merges an empty
+    // diff, and `listFiles` comes back with nothing touching `profiles/`. The
+    // title convention that `validate-profile.mjs` already enforces catches
+    // that case without opening the gate to ordinary repository work.
     const files = await github.paginate(github.rest.pulls.listFiles, {
       ...context.repo,
       pull_number: pr.number,
       per_page: 100,
     });
-    if (!files.some((f) => f.filename.startsWith('profiles/'))) {
+    if (!files.some((f) => f.filename.startsWith('profiles/')) && !TITLE_PATTERN.test(pr.title)) {
       console.log('No profile in this pull request. Nothing to reopen.');
       return;
     }

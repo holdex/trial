@@ -106,6 +106,50 @@ test("the merged pull request greets the author of the application it closed", a
   assert.equal(posted[0].body.match(/\$\{[a-z_]+\}/g), null);
 });
 
+// A candidate whose profile file already held the right content (from an
+// earlier attempt) merges an empty diff: `listFiles` returns nothing under
+// `profiles/`, even though this is a genuine profile submission.
+test("a profile pull request with an empty diff still reopens the application", async () => {
+  const posted = [];
+  const updated = [];
+  const issue = {
+    number: 1223,
+    labels: [{ name: "job-application" }],
+    user: { login: "enricojr01" },
+  };
+  const github = {
+    paginate: async () => [],
+    rest: {
+      pulls: { listFiles: "listFiles" },
+      issues: {
+        get: async () => ({ data: issue }),
+        update: async (args) => updated.push(args),
+        createComment: async (args) => posted.push(args),
+      },
+    },
+  };
+  const context = {
+    repo: { owner: "holdex", repo: "trial" },
+    payload: {
+      pull_request: {
+        number: 9,
+        title: "chore(profile): add enricojr01 profile",
+        body: "- Closes #1223",
+        user: { login: "enricojr01" },
+      },
+    },
+  };
+
+  process.env.GITHUB_WORKSPACE = root;
+  await reopen({ github, context, core: { setFailed: (m) => assert.fail(m) } });
+
+  assert.equal(updated.length, 1);
+  assert.equal(updated[0].issue_number, 1223);
+  assert.equal(updated[0].state, "open");
+  assert.equal(posted.length, 1);
+  assert.equal(posted[0].issue_number, 1223);
+});
+
 test("a pull request that touches no profile greets nobody", async () => {
   const posted = [];
   const github = {

@@ -39,7 +39,7 @@ showing who has contributed to the repo ranked by activity.
 ```markdown
 ## Contributors
 
-| # | Contributor | PRs merged | Reviews |
+| # | Contributor | PRs merged | Reviews (latest 100 PRs) |
 |---|-------------|-----------|---------|
 | 1 | [@handle](profile-url) | 4 | 2 |
 ```
