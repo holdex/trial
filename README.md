@@ -231,4 +231,17 @@ See [docs/contributing.md](docs/contributing.md).
 ## Contributors
 
 <!-- contributors-start -->
+| # | Contributor | PRs merged | Reviews (latest 100 PRs) |
+|---|-------------|-----------|---------|
+| 1 | [@zolotokrylin](https://github.com/zolotokrylin) | 19 | 7 |
+| 2 | [@tiffmyaaw](https://github.com/tiffmyaaw) | 5 | 19 |
+| 3 | [@markholdex](https://github.com/markholdex) | 3 | 1 |
+| 4 | [@HJKUNST](https://github.com/HJKUNST) | 3 | 0 |
+| 5 | [@Ananta98](https://github.com/Ananta98) | 1 | 0 |
+| 6 | [@jaibhedia](https://github.com/jaibhedia) | 1 | 0 |
+| 7 | [@nastashaardlay-ai](https://github.com/nastashaardlay-ai) | 1 | 0 |
+| 8 | [@agung-setiawan](https://github.com/agung-setiawan) | 1 | 0 |
+| 9 | [@flik930](https://github.com/flik930) | 1 | 0 |
+| 10 | [@0xnicholasy](https://github.com/0xnicholasy) | 1 | 0 |
+| 11 | [@georgeciubotaru](https://github.com/georgeciubotaru) | 0 | 1 |
 <!-- contributors-end -->
