@@ -24,8 +24,9 @@ to anyone who lands on it via a shared link.
 
 ## Contributors ranking
 
-Add a Contributors section to the README, maintained by the `readme-update`
-workflow, showing who has contributed to the repo ranked by activity.
+Add a Contributors section to the README,
+maintained by the `readme-update` workflow,
+showing who has contributed to the repo ranked by activity.
 
 **Data sources:**
 
