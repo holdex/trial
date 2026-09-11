@@ -227,3 +227,8 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 ## How to Contribute
 
 See [docs/contributing.md](docs/contributing.md).
+
+## Contributors
+
+<!-- contributors-start -->
+<!-- contributors-end -->
