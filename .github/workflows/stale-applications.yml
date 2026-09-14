@@ -1,0 +1,29 @@
+# Reminds and closes applications that never produced a pull request, the one
+# part of the funnel that was still done by hand. The logic, including why this
+# reads links rather than activity, is in stale-applications.js.
+
+name: Stale Applications
+
+# No manual trigger: the twenty-a-day cap in the script is per run, and a
+# schedule is the only thing that makes a run mean a day.
+on:
+  schedule:
+    - cron: '0 9 * * *'
+
+jobs:
+  follow-up:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Remind, then close, applications with no pull request
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fn = require('./.github/workflows/stale-applications.js');
+            await fn({ github, context, core });
