@@ -14,7 +14,7 @@ import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const { nextStep, STARTS_AT, hasLivePullRequest } = require(join(root, ".github/workflows/stale-applications.js"));
+const { nextStep, STARTS_AT, hasLivePullRequest, remindedAt } = require(join(root, ".github/workflows/stale-applications.js"));
 
 const now = "2026-10-20T00:00:00Z";
 const ago = (d) => new Date(Date.parse(now) - d * 86400000).toISOString();
@@ -77,4 +77,13 @@ test("a cross-reference from elsewhere is not one", () => {
   assert.equal(hasLivePullRequest([xref(pr("open", null, "holdex/developers"))], here), false);
   assert.equal(hasLivePullRequest([xref({ state: "open", repository: { full_name: here } })], here), false);
   assert.equal(hasLivePullRequest([{ event: "labeled" }], here), false);
+});
+
+// The reminder label survives a close, so an application a person reopens would
+// otherwise be closed again on the next run for a reminder it got weeks ago.
+test("a reopen starts the reminder over", () => {
+  const labeled = { event: "labeled", label: { name: "no-pr-reminded" }, created_at: ago(30) };
+  assert.equal(remindedAt([labeled]), ago(30));
+  assert.equal(remindedAt([labeled, { event: "closed" }, { event: "reopened" }]), null);
+  assert.equal(remindedAt([{ event: "reopened" }, labeled]), ago(30));
 });

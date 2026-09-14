@@ -67,12 +67,19 @@ function hasLivePullRequest(events, here) {
   });
 }
 
-/** When the reminder label was last added, or null if it is not on the issue. */
+/**
+ * When the reminder label was last added, or null if it is not on the issue.
+ *
+ * A reopen starts over. The label is still on the issue from the first round,
+ * and without this an application reopened by a person is closed again on the
+ * next run for a reminder it got weeks ago.
+ */
 function remindedAt(events) {
   let at = null;
   for (const event of events) {
     if (event.event === 'labeled' && event.label?.name === REMINDED_LABEL) at = event.created_at;
     if (event.event === 'unlabeled' && event.label?.name === REMINDED_LABEL) at = null;
+    if (event.event === 'reopened') at = null;
   }
   return at;
 }
@@ -115,17 +122,17 @@ module.exports = async ({ github, context, core }) => {
     const now = new Date().toISOString();
     let acted = 0;
     for (const issue of oldest) {
+      // The cap is per run, and the workflow has no manual trigger, so a run is
+      // a day. It rarely binds now that the backlog is out of scope and stays
+      // as the guard for a run that follows a long outage.
       if (acted >= CAP_PER_RUN) break;
-      // ponytail: the cap rarely binds now that the backlog is out of scope. It
-      // stays as the guard for a run that follows a long outage, and can go if
-      // the schedule proves reliable.
       const timeline = await readTimeline(github, context, issue.number);
       const step = nextStep({ createdAt: issue.created_at, ...timeline, now });
       if (step === 'none') continue;
 
       // The author, not the assignee: 175 of the 645 open applications had no
       // assignee on 2026-09-12, and where there was one it was the author.
-      const values = { candidate: issue.user.login, position: positionOf(issue) };
+      const values = { candidate: issue.user.login, position: positionOf(issue), issue_number: issue.number };
 
       if (step === 'remind') {
         await github.rest.issues.createComment({
@@ -176,4 +183,5 @@ module.exports = async ({ github, context, core }) => {
 module.exports.nextStep = nextStep;
 module.exports.STARTS_AT = STARTS_AT;
 module.exports.hasLivePullRequest = hasLivePullRequest;
+module.exports.remindedAt = remindedAt;
 module.exports.REMINDED_LABEL = REMINDED_LABEL;

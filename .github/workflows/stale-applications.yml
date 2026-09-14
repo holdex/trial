@@ -4,8 +4,9 @@
 
 name: Stale Applications
 
+# No manual trigger: the twenty-a-day cap in the script is per run, and a
+# schedule is the only thing that makes a run mean a day.
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 9 * * *'
 

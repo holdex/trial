@@ -6,6 +6,7 @@ Hi @${candidate} — we are closing this application
 with the reason `no PR was submitted`,
 as the three weeks in the first reply have passed with no pull request linked here.
 
-That is not a rejection.
-Open a new application whenever you are ready to submit one,
-and it starts from a clean slate.
+That is not a rejection, and you do not need a new application.
+When you are ready, open your profile pull request as the first reply describes,
+with `Closes #${issue_number}` in its description.
+Merging it reopens this application with your trial goal.
