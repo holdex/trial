@@ -233,10 +233,10 @@ See [docs/contributing.md](docs/contributing.md).
 <!-- contributors-start -->
 | # | Contributor | PRs merged | Reviews (latest 100 PRs) |
 |---|-------------|-----------|---------|
-| 1 | [@zolotokrylin](https://github.com/zolotokrylin) | 19 | 7 |
+| 1 | [@zolotokrylin](https://github.com/zolotokrylin) | 19 | 8 |
 | 2 | [@tiffmyaaw](https://github.com/tiffmyaaw) | 5 | 19 |
-| 3 | [@markholdex](https://github.com/markholdex) | 3 | 1 |
-| 4 | [@HJKUNST](https://github.com/HJKUNST) | 3 | 0 |
+| 3 | [@HJKUNST](https://github.com/HJKUNST) | 4 | 0 |
+| 4 | [@markholdex](https://github.com/markholdex) | 3 | 1 |
 | 5 | [@Ananta98](https://github.com/Ananta98) | 1 | 0 |
 | 6 | [@jaibhedia](https://github.com/jaibhedia) | 1 | 0 |
 | 7 | [@nastashaardlay-ai](https://github.com/nastashaardlay-ai) | 1 | 0 |
