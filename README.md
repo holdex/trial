@@ -12,7 +12,7 @@ and the best candidates rise to the top.
 | ---- | ---------- | --- |
 | UX/UI Designer | 328 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Full-Stack Engineer | 140 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
-| Senior Smart Contract Developer | 38 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Senior Smart Contract Developer | 37 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Python Engineer | 27 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Data Scientist | 19 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Marketing Maestro (Head of Marketing) | 15 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
@@ -183,15 +183,15 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 | # | Candidate | Reactions |
 |---|-----------|-----------|
 | 1 | [HR:Senior Smart Contract Developer:Sabir](https://github.com/holdex/trial/issues/1238) | 0 👍 |
-| 2 | [HR: Senior Smart Contract Developer: Trixie Thye](https://github.com/holdex/trial/issues/1234) | 0 👍 |
-| 3 | [HR: Senior Smart Contract Developer: Carlo Sevilla](https://github.com/holdex/trial/issues/1186) | 0 👍 |
-| 4 | [HR: Senior Smart Contract Developer: Ming Cheng](https://github.com/holdex/trial/issues/1156) | 0 👍 |
-| 5 | [HR: Senior Smart Contract Developer: Mujeeb Sulayman](https://github.com/holdex/trial/issues/1136) | 0 👍 |
-| 6 | [HR: Senior Smart Contract Developer: Sumit Kumar](https://github.com/holdex/trial/issues/1134) | 0 👍 |
-| 7 | [HR: Senior Smart Contract Developer: Aleksandr Ivannikov](https://github.com/holdex/trial/issues/1106) | 0 👍 |
-| 8 | [HR: Senior Smart Contract Developer: Pablo Urriza](https://github.com/holdex/trial/issues/863) | 0 👍 |
-| 9 | [HR: Senior Smart Contract Developer: Sam Yung](https://github.com/holdex/trial/issues/798) | 0 👍 |
-| 10 | [HR: Senior Smart Contract Developer: Thomas Febrianto](https://github.com/holdex/trial/issues/793) | 0 👍 |
+| 2 | [HR: Senior Smart Contract Developer: Carlo Sevilla](https://github.com/holdex/trial/issues/1186) | 0 👍 |
+| 3 | [HR: Senior Smart Contract Developer: Ming Cheng](https://github.com/holdex/trial/issues/1156) | 0 👍 |
+| 4 | [HR: Senior Smart Contract Developer: Mujeeb Sulayman](https://github.com/holdex/trial/issues/1136) | 0 👍 |
+| 5 | [HR: Senior Smart Contract Developer: Sumit Kumar](https://github.com/holdex/trial/issues/1134) | 0 👍 |
+| 6 | [HR: Senior Smart Contract Developer: Aleksandr Ivannikov](https://github.com/holdex/trial/issues/1106) | 0 👍 |
+| 7 | [HR: Senior Smart Contract Developer: Pablo Urriza](https://github.com/holdex/trial/issues/863) | 0 👍 |
+| 8 | [HR: Senior Smart Contract Developer: Sam Yung](https://github.com/holdex/trial/issues/798) | 0 👍 |
+| 9 | [HR: Senior Smart Contract Developer: Thomas Febrianto](https://github.com/holdex/trial/issues/793) | 0 👍 |
+| 10 | [HR: Senior Smart Contract Developer: Bhargav K](https://github.com/holdex/trial/issues/778) | 0 👍 |
 
 ### UX/UI Designer
 
