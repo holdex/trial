@@ -1,0 +1,14 @@
+{
+  "name": "holdex",
+  "description": "Holdex workflows as agent skills: contributing rules for issues and PRs, bug attribution, and time tracking.",
+  "owner": {
+    "name": "Holdex"
+  },
+  "plugins": [
+    {
+      "name": "holdex",
+      "source": "./",
+      "description": "Holdex workflows as agent skills: contributing rules for issues and PRs, bug attribution, and time tracking."
+    }
+  ]
+}
