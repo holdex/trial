@@ -233,6 +233,9 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 ## How to Contribute
 
 See [docs/contributing.md](docs/contributing.md).
+Everyone here holds to the [Code of Conduct](docs/CODE_OF_CONDUCT.md).
+To refer a contributor or a client, see the
+[Referral Program](docs/REFERRAL.md).
 
 ## Contributors
 
