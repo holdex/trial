@@ -22,6 +22,7 @@ and the best candidates rise to the top.
 | Developer Relations (DevRel) | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | DevOps Engineer | 9 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Partner (Entrepreneur in Residence) | 6 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
+| Other | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 | Executive Assistant | 1 | [Apply →](https://github.com/holdex/trial/issues/new?template=job-application.yml) |
 <!-- positions-end -->
 
@@ -150,6 +151,12 @@ Your application: `https://github.com/holdex/trial/issues/<your-issue-number>`
 | 8 | [HR: Marketing Maestro (Head of Marketing): Debby Febrina](https://github.com/holdex/trial/issues/1077) | 0 👍 |
 | 9 | [HR: Marketing Maestro (Head of Marketing): Andy Makkaraseng](https://github.com/holdex/trial/issues/1076) | 0 👍 |
 | 10 | [HR: Marketing Maestro (Head of Marketing): Nofero Nofero](https://github.com/holdex/trial/issues/1075) | 0 👍 |
+
+### Other
+
+| # | Candidate | Reactions |
+|---|-----------|-----------|
+| 1 | [HR: Rust Engineer (Solana): Lucky Ivanius](https://github.com/holdex/trial/issues/1253) | 1 👍 |
 
 ### Partner (Entrepreneur in Residence)
 
