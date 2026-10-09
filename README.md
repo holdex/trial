@@ -237,6 +237,45 @@ Everyone here holds to the [Code of Conduct](docs/CODE_OF_CONDUCT.md).
 To refer a contributor or a client, see the
 [Referral Program](docs/REFERRAL.md).
 
+## Skills and plugins
+
+The contributor workflows live as standard Agent Skills in `skills/`,
+and the repository itself is packaged as a plugin,
+so any supported tool can install them.
+Each skill calls only public Wizard commands.
+
+Any coding agent (Claude Code, Codex, Cursor, OpenCode, Copilot, and more):
+
+```bash
+npx skills add holdex/developers
+```
+
+Add `-g` to install them globally for every repo you work in, and run
+`npx skills update` to pick up changes after pulling the repo.
+
+Claude Code, as a plugin from the built-in marketplace:
+
+```bash
+claude plugin marketplace add holdex/developers
+claude plugin install holdex@holdex
+```
+
+Each skill then runs as `/holdex:<skill-name>`, with the bare `/<skill-name>`
+working when no other command claims it.
+
+Cursor, from the repository: open Customize and import `holdex/developers` as a
+marketplace, then install the `holdex` plugin from it.
+
+The repository is also a conformant Agent Plugin (a root `plugin.json` following
+the [Agent Plugins](https://agent-plugins.org) open standard), so any other
+spec-conformant tool can install it directly. Available skills:
+
+| Skill | When to use |
+| --- | --- |
+| `holdex-contributing` | Before creating or updating a GitHub issue or PR in any Holdex repository |
+| `report-bug` | Post the bug attribution comment a `fix` PR needs before review |
+| `submit-time` | Record time spent on a pull request |
+
 ## Contributors
 
 <!-- contributors-start -->
