@@ -33,7 +33,7 @@ Read all six steps before you start.
 You do not need git on your machine.
 Everything below happens in the browser.
 
-1. Read the [Developer Guidelines](https://github.com/holdex/developers).
+1. Read [What we expect](https://github.com/holdex/trial/blob/main/docs/trial.md#what-we-expect).
    Not following them is the most common reason a contribution is rejected.
 1. [Fork this repository](${fork_link}), keeping the name `${repo}`.
    You cannot write to ours, so your file goes to your copy first.

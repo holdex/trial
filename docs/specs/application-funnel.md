@@ -198,7 +198,7 @@ A closed application is not a rejection and the candidate is told so.
 1. Interviews, offers, and onboarding.
 1. Any submission channel other than GitHub.
 
-[guidelines]: https://github.com/holdex/developers
+[guidelines]: ../trial.md#what-we-expect
 [hr-100]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-100.md
 [hr-110]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-110.md
 [hr-290]: https://github.com/holdex/hr-internal/blob/main/docs/rules/HR-290.md

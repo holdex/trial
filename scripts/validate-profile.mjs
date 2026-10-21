@@ -125,7 +125,7 @@ async function check(pull, files) {
 
   if (!TITLE_PATTERN.test(pull.title)) {
     return fail(
-      `Rename this pull request to \`chore(profile): add ${author} profile\`. The naming convention is in the [Developer Guidelines](https://github.com/holdex/developers).`,
+      `Rename this pull request to \`chore(profile): add ${author} profile\`. The naming convention is [DEV-340](https://wizard.holdex.io/docs/rules/DEV-340).`,
     );
   }
 
