@@ -1,0 +1,10 @@
+{
+  "name": "holdex",
+  "description": "Holdex workflows as agent skills: contributing rules for issues and PRs, bug attribution, and time tracking.",
+  "author": {
+    "name": "Holdex"
+  },
+  "homepage": "https://github.com/holdex/developers",
+  "repository": "https://github.com/holdex/developers",
+  "keywords": ["holdex", "contributing", "workflow"]
+}
