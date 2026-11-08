@@ -34,7 +34,7 @@ and recognise the service they came for.
 ## Deliverables
 
 1. A short strategy document on how you would collaborate on this Goal while
-   holding to the [Developer Guidelines](https://github.com/holdex/developers).
+   holding to the [What we expect](../trial.md#what-we-expect).
 1. A design in Figma, low or high fidelity, that achieves the objective.
 1. A walkthrough of your decisions, written or on video, five minutes at most.
 
